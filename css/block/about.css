@@ -1,0 +1,31 @@
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about::before {
+  content: "";
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background: url(/img/cameraman.png) center center / cover no-repeat;
+  vertical-align: top;
+}
+
+.about__desc {
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+  padding: 70px;
+  background-color: #fff;
+  width: 750px;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-left: -230px;
+  margin-top: 100px;
+}
+
+.about__desc-text p{
+  margin-bottom: 40px;
+}
+

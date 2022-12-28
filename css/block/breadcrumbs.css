@@ -1,0 +1,17 @@
+.breadcrumbs__list {
+  display: flex;
+  color: #9A9A9A;
+  font-size: 14px;
+}
+
+.breadcrumbs__link {
+  text-decoration: underline;
+}
+
+.breadcrumbs__link:last-child {
+  font-weight: bold;
+}
+
+.breadcrumbs__separator {
+  display: inline-flex;
+}

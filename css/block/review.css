@@ -1,0 +1,79 @@
+.review {
+  background-color: #fff;
+  color: #000;
+  padding-top: 40px;
+}
+
+.review__box {
+  display: flex;
+}
+
+.review__list {
+  flex-direction: column;
+  column-count: 2;
+  margin-bottom: 50px;
+}
+
+.review__item {
+  background-color: #F4F5F5;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 50px 30px;
+  display: inline-flex;
+  flex-direction: column;
+  transition: box-shadow .3s;
+}
+
+.review__item:hover {
+  box-shadow: 2px 10px 25px rgb(62 58 58 / 60%);
+}
+
+.review__contact {
+  display: flex;  
+}
+
+.review__img-box {
+  margin-bottom: 30px;
+}
+
+.review__name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E77A4;
+  white-space: nowrap;
+}
+
+.review__name:hover {
+  text-decoration: underline;
+}
+
+.review__name::after {
+  content: "";
+  display: inline-block;
+  background: url(/img/vk-blue.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  transform: translateY(5px);
+}
+
+.review__info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.review__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.review__desc-text {
+  margin-bottom: 50px;
+  color: #818181;
+}
+
+.review__date {
+  font-weight: 600;
+}

@@ -1,0 +1,11 @@
+.address {
+  font-style: normal;
+}
+
+.address__phone {
+  font-size: 26px;
+}
+
+.address__phone:hover {
+  color: #FF3D00;
+}

@@ -1,0 +1,20 @@
+.menu {
+  font-size: 14px;
+}
+
+.menu__list {
+  display: flex;
+  padding-left: 80px;
+}
+
+.menu__item {
+  margin-right: 54px;
+}
+
+.menu__link:hover {
+  color: #FF3D00;
+} 
+
+.menu__link--active {
+  color: #FF3D00;
+}

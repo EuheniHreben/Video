@@ -1,0 +1,48 @@
+.service {
+  margin-bottom: 180px;
+}
+
+.service__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.service__item {
+  width: 31%;
+  max-height: 480px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: box-shadow .3s;
+  color: #666;
+  overflow: hidden;
+}
+
+.service__img-box {
+  margin-bottom: 30px;
+}
+
+.service__title {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.service__list-info {
+  margin-bottom: 26px;
+  display: flex;
+}
+
+.service__info {
+  margin-bottom: 30px;
+}
+
+.service__btn {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
