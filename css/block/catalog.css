@@ -1,0 +1,40 @@
+.catalog {
+  background-color: #fff;
+  color: #000;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.catalog__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item {
+  display: flex;
+  transition: background-color .5s;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 10px 25px rgb(62 58 58 / 50%);
+}
+
+.catalog__item:hover {
+  background-color: rgba(215, 213, 213, 0.5);
+}
+
+.catalog__info {
+  padding: 10px 40px;
+}
+
+.catalog__title {
+  margin-bottom: 30px;
+}
+
+.catalog__desc {
+  margin-bottom: 30px;
+}
+
+.catalog__img {
+  max-width: 400px;
+}

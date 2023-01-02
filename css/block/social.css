@@ -1,0 +1,7 @@
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  padding-left: 10px;
+}

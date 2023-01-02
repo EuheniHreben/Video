@@ -1,7 +1,8 @@
 .review {
   background-color: #fff;
   color: #000;
-  padding-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .review__box {
@@ -30,9 +31,6 @@
 
 .review__contact {
   display: flex;  
-}
-
-.review__img-box {
   margin-bottom: 30px;
 }
 
@@ -60,6 +58,7 @@
 .review__info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-left: 20px;
 }
 

@@ -4,6 +4,7 @@
 
 .address__phone {
   font-size: 26px;
+  cursor: pointer;
 }
 
 .address__phone:hover {
