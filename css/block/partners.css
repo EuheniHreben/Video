@@ -1,0 +1,28 @@
+.partners {
+  background-color: #F4F5F5;
+  padding-top: 80px;
+  color: #000;
+  padding-bottom: 80px;
+}
+
+.partners__box {
+  display: flex;
+
+}
+
+.partner__list {
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-count: 4;
+}
+
+.partner__item {
+  margin-right: 80px;
+  margin-bottom: 60px;
+  filter: grayscale(1);
+  transition: filter .5s;
+}
+
+.partner__item:hover {
+  filter: grayscale(0);
+}

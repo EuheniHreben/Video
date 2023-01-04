@@ -5,6 +5,7 @@
 }
 
 .page__current {
+  line-height: 32px;
   margin-right: 36px;
 }
 
@@ -18,7 +19,7 @@
   line-height: 32px;
   vertical-align: middle;
   border-radius: 50%;
-  transition: background-color .3s;
+  transition: background-color .5s;
 }
 
 .page__item:hover {
