@@ -4,3 +4,26 @@
   padding-bottom: 80px;
   color: #000;
 }
+
+.form__group {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  height: 60px;
+  padding: 20px 30px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.form__input:focus {
+  border-color: #CCCCCC;
+}
+
+.form__input--textarea {
+  resize: none;
+  height: 235px;
+}
