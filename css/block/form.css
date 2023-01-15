@@ -27,3 +27,7 @@
   resize: none;
   height: 235px;
 }
+
+.form__services {
+  margin-right: 10px;
+}

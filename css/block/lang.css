@@ -1,0 +1,15 @@
+.lang {
+  margin-left: -100px;
+}
+
+.lang__item {
+  cursor: pointer;
+}
+
+.lang__item:hover {
+  color: #FF3D00;
+}
+
+.lang__item--active {
+  color: #FF3D00;
+}

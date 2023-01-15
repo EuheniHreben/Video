@@ -20,16 +20,17 @@
   vertical-align: middle;
   border-radius: 50%;
   transition: background-color .5s;
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .page__item:hover {
   background-color: #FF5500;
 }
 
-.page__link {
-  display: block;
-  width: 32px;
-  height: 32px;
+.page__item--active {
+  background-color: #FF5500;
 }
 
 .page__link:hover {
