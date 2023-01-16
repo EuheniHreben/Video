@@ -28,6 +28,23 @@
   height: 235px;
 }
 
-.form__services {
-  margin-right: 10px;
+.form__quest {
+  width: 40%;
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.form__item {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.form__btn {
+  display: flex;
+  justify-content: end;
 }

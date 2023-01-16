@@ -37,7 +37,7 @@
  .dropdown__menu::after {
   content: "";
   display: block;
-  left: 80px;
+  left: 60%;
   position: absolute;
   top: -33px;
   z-index: 1000;

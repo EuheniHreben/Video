@@ -38,10 +38,10 @@
 }
 
 .btn_type_third {
-  background: #3d3c3c;
+  background: #4d4b4b;
 }
 
 .btn_type_third:hover {
-  background: #656363;
+  background: #3d3c3c;
   box-shadow: 0 0 20px 0 #5a5959
 }

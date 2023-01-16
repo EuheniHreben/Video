@@ -2,9 +2,13 @@
   font-size: 14px;
 }
 
+.header .menu__list {
+  padding-left: 160px;
+}
+
 .menu__list {
   display: flex;
-  padding-left: 60px;
+  padding-left: 80px;
 }
 
 .menu__item {
