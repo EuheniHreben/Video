@@ -3,5 +3,47 @@
 }
 
 .social__item {
-  padding-left: 10px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background .5s;
+}
+
+.social__link {
+  display: block;
+  height: 36px;
+  width: 36px;
+}
+
+.social__item--tel {
+  background: url(/img/telegram.png);
+}
+
+.social__item--tel:hover {
+  background: url(/img/t2.png);
+}
+
+.social__item--vk {
+  background: url(/img/vk.png) center center no-repeat;
+}
+
+.social__item--vk:hover {
+  background: url(/img/vk2.png) center center no-repeat;
+}
+
+.social__item--f {
+  background: url(/img/f.png) center center no-repeat;
+}
+
+.social__item--f:hover {
+  background: url(/img/f2.png) center center no-repeat;
+}
+
+.social__item--in {
+  background: url(/img/in.png) center center no-repeat;
+}
+
+.social__item--in:hover {
+  background: url(/img/in2.png) center center no-repeat;
 }
