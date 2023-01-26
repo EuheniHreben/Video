@@ -5,8 +5,8 @@
 }
 
 .page__current {
-  line-height: 32px;
-  margin-right: 36px;
+  line-height: rem(32px);
+  margin-right: rem(36px);
 }
 
 .page__list {
@@ -14,15 +14,15 @@
 }
 
 .page__item {
-  margin-right: 14px;
+  margin-right: rem(14px);
   font-weight: bold;
-  line-height: 32px;
+  line-height: rem(32px);
   vertical-align: middle;
   border-radius: 50%;
   transition: background-color .5s;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: rem(32px);
+  height: rem(32px);
 }
 
 .page__item:hover {

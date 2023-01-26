@@ -1,8 +1,8 @@
 .tag {
   display: inline-block;
   background-color: #F2D4C9;
-  padding: 10px 25px;
-  border-radius: 35px;
+  padding: rem(10px) rem(25px);
+  border-radius: rem(35px);
   white-space: nowrap;
-  font-size: 13px;
+  font-size: rem(13px);
 }

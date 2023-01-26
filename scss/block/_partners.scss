@@ -1,8 +1,8 @@
 .partners {
   background-color: #F4F5F5;
-  padding-top: 80px;
+  padding-top: rem(80px);
   color: #000;
-  padding-bottom: 80px;
+  padding-bottom: rem(80px);
 }
 
 .partners__box {
@@ -17,8 +17,8 @@
 }
 
 .partner__item {
-  margin-right: 80px;
-  margin-bottom: 60px;
+  margin-right: rem(80px);
+  margin-bottom: rem(60px);
   filter: grayscale(1);
   transition: filter .5s;
 }

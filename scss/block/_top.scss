@@ -1,10 +1,10 @@
 .top {
   background: url(/img/top-line.png) center center / cover no-repeat;
-  max-height: 450px;
+  max-height: rem(450px);
 }
 
 .top__title {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: rem(80px);
 }

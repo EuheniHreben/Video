@@ -1,8 +1,8 @@
 .review {
   background-color: #fff;
   color: #000;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: rem(80px);
+  padding-bottom: rem(60px);
 }
 
 .review__box {
@@ -12,30 +12,30 @@
 .review__list {
   flex-direction: column;
   column-count: 2;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
 }
 
 .review__item {
   background-color: #F4F5F5;
-  margin: 20px;
-  border-radius: 15px;
-  padding: 50px 30px;
+  margin: rem(20px);
+  border-radius: rem(15px);
+  padding: rem(50px) rem(30px);
   display: inline-flex;
   flex-direction: column;
   transition: box-shadow .3s;
 
   &:hover {
-    box-shadow: 2px 10px 25px rgb(62, 58, 58 / .6);
+    box-shadow: 2px rem(10px) rem(25px) rgb(62, 58, 58 / .6);
   }
 }
 
 .review__contact {
   display: flex;  
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .review__name {
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: bold;
   color: #2E77A4;
   white-space: nowrap;
@@ -49,8 +49,8 @@
   content: "";
   display: inline-block;
   background: url(/img/socials/vk-blue.png) no-repeat;
-  width: 30px;
-  height: 30px;
+  width: rem(30px);
+  height: rem(30px);
   margin-left: 6px;
   transform: translateY(5px);
 }
@@ -59,17 +59,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
+  padding-left: rem(20px);
 }
 
 .review__title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 14px;
+  margin-bottom: rem(14px);
 }
 
 .review__desc-text {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   color: #818181;
 }
 

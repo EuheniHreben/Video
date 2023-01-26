@@ -1,5 +1,5 @@
 .service {
-  margin-bottom: 180px;
+  margin-bottom: rem(180px);
 }
 
 .service__list {
@@ -10,11 +10,11 @@
 
 .service__item {
   width: 31%;
-  max-height: 480px;
+  max-height: rem(480px);
   background-color: #fff;
   border-radius: 5px;
-  margin: 10px;
-  padding: 30px;
+  margin: rem(10px);
+  padding: rem(30px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,21 +24,21 @@
 }
 
 .service__img-box {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .service__title {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   color: #000;
 }
 
 .service__list-info {
-  margin-bottom: 26px;
+  margin-bottom: rem(26px);
   display: flex;
 }
 
 .service__info {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .service__btn {

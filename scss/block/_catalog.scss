@@ -1,8 +1,8 @@
 .catalog {
   background-color: #fff;
   color: #000;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: rem(80px);
+  padding-bottom: rem(60px);
 }
 
 .catalog__box {
@@ -13,23 +13,23 @@
 .catalog__item {
   display: flex;
   transition: background-color .5s;
-  margin-bottom: 40px;
-  padding: 10px;
+  margin-bottom: rem(40px);
+  padding: rem(10px);
 }
 
 .catalog__info {
-  padding: 10px 50px;
+  padding: rem(10px) rem(50px);
 }
 
 .catalog__title {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .catalog__desc {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .catalog__img {
-  max-width: 400px;
-  border-radius: 40px;
+  max-width: rem(400px);
+  border-radius: rem(40px);
 }

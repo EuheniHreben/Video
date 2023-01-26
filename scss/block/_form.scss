@@ -1,20 +1,20 @@
 .form {
   background-color: #F4F5F5;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: rem(80px);
+  padding-bottom: rem(80px);
   color: #000;
 }
 
 .form__group {
   display: flex;
-  margin-bottom: 26px;
+  margin-bottom: rem(26px);
 }
 
 .form__input {
   flex: 1;
-  margin-right: 30px;
-  height: 60px;
-  padding: 20px 30px;
+  margin-right: rem(30px);
+  height: rem(60px);
+  padding: rem(20px) rem(30px);
   border: 1px solid transparent;
   border-radius: 5px;
 }
@@ -25,7 +25,7 @@
 
 .form__input--textarea {
   resize: none;
-  height: 235px;
+  height: rem(235px);
 }
 
 .form__quest {
@@ -35,13 +35,13 @@
 .form__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-  padding-left: 10px;
+  margin-bottom: rem(30px);
+  padding-left: rem(10px);
 }
 
 .form__item {
-  margin-right: 20px;
-  margin-bottom: 10px;
+  margin-right: rem(20px);
+  margin-bottom: rem(10px);
 }
 
 .form__btn {
