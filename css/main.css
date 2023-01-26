@@ -16,7 +16,7 @@ html, body {
   width: 100%; }
 
 .wrapper-main {
-  background: url(/img/hero.png) center top no-repeat, url(/img/bottom-pic.png) center bottom no-repeat; }
+  background: url(./img/hero.png) center top no-repeat, url(./img/bottom-pic.png) center bottom no-repeat; }
 
 .container {
   width: 95%;
@@ -381,7 +381,7 @@ template {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/img/bg.png) center center/cover no-repeat;
+  background: url(./img/bg.png) center center/cover no-repeat;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -399,7 +399,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/img/rec.png) center center/cover no-repeat;
+  background: url(./img/rec.png) center center/cover no-repeat;
   min-width: 53%;
   min-height: 58%; }
 
@@ -459,7 +459,7 @@ template {
   width: 31.25rem;
   height: 31.25rem;
   border-radius: 5px;
-  background: url(/img/cameraman.png) center center/cover no-repeat;
+  background: url(./img/cameraman.png) center center/cover no-repeat;
   vertical-align: top; }
 
 .about__desc {
@@ -759,28 +759,28 @@ template {
   width: 2.25rem; }
 
 .social__item--tel {
-  background: url(/img/socials/telegram.png); }
+  background: url(./img/socials/telegram.png); }
 
 .social__item--tel:hover {
-  background: url(/img/socials/t2.png); }
+  background: url(./img/socials/t2.png); }
 
 .social__item--vk {
-  background: url(/img/socials/vk.png) center center no-repeat; }
+  background: url(./img/socials/vk.png) center center no-repeat; }
 
 .social__item--vk:hover {
-  background: url(/img/socials/vk2.png) center center no-repeat; }
+  background: url(./img/socials/vk2.png) center center no-repeat; }
 
 .social__item--f {
-  background: url(/img/socials/f.png) center center no-repeat; }
+  background: url(./img/socials/f.png) center center no-repeat; }
 
 .social__item--f:hover {
-  background: url(/img/socials/f2.png) center center no-repeat; }
+  background: url(./img/socials/f2.png) center center no-repeat; }
 
 .social__item--in {
-  background: url(/img/socials/in.png) center center no-repeat; }
+  background: url(./img/socials/in.png) center center no-repeat; }
 
 .social__item--in:hover {
-  background: url(/img/socials/in2.png) center center no-repeat; }
+  background: url(./img/socials/in2.png) center center no-repeat; }
 
 .review {
   background-color: #fff;
@@ -840,7 +840,7 @@ template {
 .review__name::after {
   content: "";
   display: inline-block;
-  background: url(/img/socials/vk-blue.png) no-repeat;
+  background: url(./img/socials/vk-blue.png) no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   margin-left: 6px;
@@ -893,7 +893,7 @@ template {
   color: #FF3D00; }
 
 .top {
-  background: url(/img/top-line.png) center center/cover no-repeat;
+  background: url(./img/top-line.png) center center/cover no-repeat;
   max-height: 28.125rem; }
 
 .top__title {
