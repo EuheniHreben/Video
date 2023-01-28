@@ -1,5 +1,9 @@
 .paper {
   margin-bottom: rem(200px);
+  
+  @include phones {
+    display: none;
+  }
 }
 
 .paper__desc {
@@ -8,6 +12,10 @@
   border-radius: 5px;
   padding: rem(40px);
   margin-bottom: rem(50px);
+}
+
+.paper__title {
+  margin-bottom: rem(40px);
 }
 
 .paper__desc-text p{

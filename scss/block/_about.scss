@@ -8,8 +8,12 @@
   width: rem(500px);
   height: rem(500px);
   border-radius: 5px;
-  background: url(./img/cameraman.png) center center / cover no-repeat;
+  background: url(../img/cameraman.png) center center / cover no-repeat;
   vertical-align: top;
+}
+
+.about__title {
+  margin-bottom: 20px;
 }
 
 .about__desc {

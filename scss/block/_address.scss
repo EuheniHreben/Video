@@ -1,5 +1,9 @@
 .address {
   font-style: normal;
+
+  @include phones {
+    display: none;
+  }
 }
 
 .address__phone {
