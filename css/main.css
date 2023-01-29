@@ -555,7 +555,7 @@ template {
   font-weight: bold; }
 
 .hero {
-  margin-bottom: 11.1111111111rem; }
+  margin-bottom: 13.3333333333rem; }
 
 .hero__title {
   text-align: center;
@@ -588,7 +588,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 1.5555555556rem;
-  margin-bottom: 6.6666666667rem;
+  margin-bottom: 8.8888888889rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -612,7 +612,7 @@ template {
           appearance: none; }
 
 .control__input:checked ~ .control__tag {
-  background-color: #F2D4C9; }
+  background-color: #e95019; }
 
 .control__tag {
   background-color: #E7E7E7;
@@ -627,8 +627,9 @@ template {
     .header .menu__list {
       padding-left: 0rem; } }
 
-.footer .menu__list {
-  display: none; }
+@media (max-width: 480px) {
+  .footer .menu__list {
+    display: none; } }
 
 .menu__list {
   display: -webkit-box;
@@ -966,7 +967,7 @@ template {
   background: url(../img/top-line.png) center center/cover no-repeat;
   max-height: 25rem; }
 
-.top__title {
+.top h1 {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4.4444444444rem; }
@@ -1113,19 +1114,36 @@ template {
   transition: background-color .5s;
   margin-bottom: 2.2222222222rem;
   padding: 0.5555555556rem; }
+  @media (max-width: 480px) {
+    .catalog__item {
+      width: 100%; } }
 
 .catalog__info {
   padding: 0.5555555556rem 2.7777777778rem; }
+  @media (max-width: 480px) {
+    .catalog__info {
+      padding: 0.5555555556rem 1.1111111111rem; } }
 
-.catalog__title {
+.catalog h2 {
   margin-bottom: 1.6666666667rem; }
+  @media (max-width: 480px) {
+    .catalog h2 {
+      font-size: 1.1111111111rem;
+      margin-bottom: 0.5555555556rem; } }
 
-.catalog__desc {
+.catalog p {
   margin-bottom: 1.6666666667rem; }
+  @media (max-width: 480px) {
+    .catalog p {
+      font-size: 0.7777777778rem; } }
 
 .catalog__img {
   max-width: 22.2222222222rem;
   border-radius: 2.2222222222rem; }
+  @media (max-width: 480px) {
+    .catalog__img {
+      max-width: 8.3333333333rem;
+      border-radius: 1.1111111111rem; } }
 
 .breadcrumbs__list {
   display: -webkit-box;

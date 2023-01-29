@@ -15,21 +15,46 @@
   transition: background-color .5s;
   margin-bottom: rem(40px);
   padding: rem(10px);
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .catalog__info {
   padding: rem(10px) rem(50px);
+  
+  @include phones {
+    padding: rem(10px) rem(20px);
+  }
 }
 
-.catalog__title {
+.catalog h2 {
   margin-bottom: rem(30px);
+  
+  
+  @include phones {
+    font-size: rem(20px);
+    margin-bottom: rem(10px);
+  }
 }
 
-.catalog__desc {
+.catalog p {
   margin-bottom: rem(30px);
+
+  
+  @include phones {
+    font-size: rem(14px);
+  }
 }
 
 .catalog__img {
   max-width: rem(400px);
   border-radius: rem(40px);
+  
+  
+  @include phones {
+    max-width: rem(150px);
+    border-radius: rem(20px);
+  }
 }
