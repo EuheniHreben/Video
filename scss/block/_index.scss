@@ -19,9 +19,27 @@
   min-height: 58%;
 }
 
+.index__img-box {
+  
+  @include phones {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+}
+
+.index__img {
+  margin-bottom: 40px;
+  
+  @include phones {
+    width: 220%;
+  }
+}
+
 .index__central {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .index__btn {

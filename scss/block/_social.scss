@@ -3,8 +3,8 @@
 }
 
 .social__item {
-  width: rem(36px);
-  height: rem(36px);
+  width: 36px;
+  height: 36px;
   cursor: pointer;
   margin-right: rem(10px);
   transition: background .5s;
@@ -12,8 +12,8 @@
 
 .social__link {
   display: block;
-  height: rem(36px);
-  width: rem(36px);
+  height: 36px;
+  width: 36px;
 }
 
 .social__item--tel {

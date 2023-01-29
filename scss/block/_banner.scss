@@ -1,3 +1,7 @@
 .banner__img {
   display: block;
+
+  @include phones {
+    display: none;
+  }
 }

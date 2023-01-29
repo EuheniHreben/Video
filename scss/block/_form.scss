@@ -5,18 +5,36 @@
   color: #000;
 }
 
+.form__form {
+
+  @include phones {
+    width: 100%;
+  }
+}
+
 .form__group {
   display: flex;
-  margin-bottom: rem(26px);
+
+  &--phones {
+
+    @include phones {
+      flex-direction: column;
+    }
+  }
 }
 
 .form__input {
   flex: 1;
   margin-right: rem(30px);
+  margin-bottom: rem(30px);
   height: rem(60px);
   padding: rem(20px) rem(30px);
   border: 1px solid transparent;
   border-radius: 5px;
+  
+  @include phones {
+    margin-right: rem(0px);
+  }
 }
 
 .form__input:focus {
@@ -37,14 +55,27 @@
   flex-wrap: wrap;
   margin-bottom: rem(30px);
   padding-left: rem(10px);
+  
+  @include phones {
+    width: min-content;
+    margin-bottom: rem(10px);
+  }
 }
 
 .form__item {
   margin-right: rem(20px);
   margin-bottom: rem(10px);
+  
+  @include phones {
+      margin-right: rem(10px);
+    }
 }
 
 .form__btn {
   display: flex;
   justify-content: end;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
