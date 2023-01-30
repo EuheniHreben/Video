@@ -14,8 +14,8 @@
 }
 
 .service__item {
-  width: 31%;
-  max-height: rem(550px);
+  width: rem(360px);
+  min-height: rem(550px);
   background-color: #fff;
   border-radius: 5px;
   margin: rem(10px);
@@ -26,7 +26,7 @@
   transition: box-shadow .3s;
   color: #666;
   overflow: hidden;
-
+  
   @include phones {
     min-width: 80%;
   }
