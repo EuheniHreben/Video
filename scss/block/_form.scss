@@ -46,8 +46,12 @@
   height: rem(235px);
 }
 
-.form__quest {
+.form__services {
   width: 40%;
+  
+  @include phones {
+    width: 40%;
+  }
 }
 
 .form__list {
@@ -58,24 +62,22 @@
   
   @include phones {
     width: min-content;
+    min-width: 50%;
     margin-bottom: rem(10px);
+    padding-left: rem(0px);
   }
 }
 
 .form__item {
-  margin-right: rem(20px);
-  margin-bottom: rem(10px);
-  
-  @include phones {
-      margin-right: rem(10px);
-    }
+  padding-left: rem(20px);
+  padding-bottom: rem(10px);
 }
 
 .form__btn {
   display: flex;
   justify-content: end;
-
+  
   @include phones {
-    flex-direction: column;
+    justify-content: space-around;
   }
 }

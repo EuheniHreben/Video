@@ -1,32 +1,24 @@
 .catalog {
   background-color: #fff;
   color: #000;
-  padding-top: rem(80px);
+  padding-top: rem(40px);
   padding-bottom: rem(60px);
-}
-
-.catalog__box {
-  display: flex;
-  flex-direction: column;
 }
 
 .catalog__item {
   display: flex;
   transition: background-color .5s;
-  margin-bottom: rem(40px);
-  padding: rem(10px);
+  padding-top: rem(20px);
+}
 
-  @include phones {
-    width: 100%;
-  }
+.catalog__img-box {
+  display: flex;
+  align-items: center;
 }
 
 .catalog__info {
-  padding: rem(10px) rem(50px);
-  
-  @include phones {
-    padding: rem(10px) rem(20px);
-  }
+  padding-bottom: rem(10px);
+  padding-left: rem(30px);
 }
 
 .catalog h2 {
@@ -40,7 +32,7 @@
 }
 
 .catalog p {
-  margin-bottom: rem(30px);
+  margin-bottom: rem(20px);
 
   
   @include phones {
@@ -57,4 +49,9 @@
     max-width: rem(150px);
     border-radius: rem(20px);
   }
+}
+
+.catalog hr {
+  background-color: rgb(145, 140, 140);
+  border: 1px solid rgb(145, 140, 140);
 }

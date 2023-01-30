@@ -63,10 +63,6 @@ h3 {
   font-size: 1.3333333333rem;
   font-weight: bold; }
 
-hr {
-  background-color: #666;
-  border: 1px solid #666; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -473,45 +469,64 @@ template {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1); } }
-.about-section {
+.about {
   margin-bottom: 2.7777777778rem; }
 
-.about::before {
-  content: "";
-  display: inline-block;
-  width: 27.7777777778rem;
-  height: 27.7777777778rem;
-  border-radius: 5px;
-  background: url(../img/cameraman.png) center center/cover no-repeat;
-  vertical-align: top; }
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.about__title {
-  margin-bottom: 20px; }
+.about__item {
+  width: 50%; }
+  @media (max-width: 480px) {
+    .about__item {
+      font-size: 0.6666666667rem; } }
+
+.about__item:nth-child(2) {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: -10%;
+  margin-top: 10%;
+  max-height: 33.3333333333rem;
+  max-width: 38.8888888889rem;
+  overflow: hidden; }
+
+.about__img {
+  width: 100%; }
 
 .about__desc {
-  display: inline-block;
-  vertical-align: top;
-  color: #000;
-  padding: 3.8888888889rem;
-  background-color: #fff;
-  width: 41.6666666667rem;
-  min-height: 25rem;
-  border-radius: 5px;
-  margin-left: -12.7777777778rem;
-  margin-top: 5.5555555556rem; }
+  left: 0;
+  top: 0;
+  padding: 2.7777777778rem;
+  color: #000; }
+  @media (max-width: 480px) {
+    .about__desc {
+      padding: 1.1111111111rem; } }
 
-.about__desc-text p {
-  margin-bottom: 2.2222222222rem; }
+.about__text {
+  line-height: 1.70; }
+
+.about__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem; }
+
+.about__text {
+  margin-bottom: 2.4444444444rem; }
 
 .dropdown {
   position: relative;
-  cursor: pointer;
-  text-align: right; }
+  text-align: right;
+  cursor: pointer; }
 
 .dropdown__link {
   font-size: 0.7222222222rem;
   text-decoration: underline;
-  margin-bottom: 0.5555555556rem;
+  margin-bottom: 10px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s; }
 
@@ -529,21 +544,21 @@ template {
   color: #000;
   white-space: nowrap;
   border: 1px solid transparent;
-  padding: 0.5555555556rem;
+  padding: 10px;
   border-radius: 0.5rem;
   right: -555.5rem;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
-  top: 1.6666666667rem; }
+  top: 30px; }
 
 .dropdown__menu::after {
   content: "";
   display: block;
   left: 60%;
   position: absolute;
-  top: -1.8333333333rem;
+  top: -33px;
   z-index: 1000;
-  border: 1.1111111111rem solid transparent;
+  border: 20px solid transparent;
   width: 0;
   height: 0;
   border-color: transparent transparent #EDEDED transparent; }
@@ -790,6 +805,10 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.footer hr {
+  background-color: #666;
+  border: 1px solid #666; }
 
 .social__list {
   display: -webkit-box;
@@ -1052,8 +1071,11 @@ template {
   resize: none;
   height: 13.0555555556rem; }
 
-.form__quest {
+.form__services {
   width: 40%; }
+  @media (max-width: 480px) {
+    .form__services {
+      width: 40%; } }
 
 .form__list {
   display: -webkit-box;
@@ -1068,14 +1090,13 @@ template {
       width: -webkit-min-content;
       width: -moz-min-content;
       width: min-content;
-      margin-bottom: 0.5555555556rem; } }
+      min-width: 50%;
+      margin-bottom: 0.5555555556rem;
+      padding-left: 0rem; } }
 
 .form__item {
-  margin-right: 1.1111111111rem;
-  margin-bottom: 0.5555555556rem; }
-  @media (max-width: 480px) {
-    .form__item {
-      margin-right: 0.5555555556rem; } }
+  padding-left: 1.1111111111rem;
+  padding-bottom: 0.5555555556rem; }
 
 .form__btn {
   display: -webkit-box;
@@ -1086,25 +1107,14 @@ template {
           justify-content: end; }
   @media (max-width: 480px) {
     .form__btn {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .catalog {
   background-color: #fff;
   color: #000;
-  padding-top: 4.4444444444rem;
+  padding-top: 2.2222222222rem;
   padding-bottom: 3.3333333333rem; }
-
-.catalog__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
 
 .catalog__item {
   display: -webkit-box;
@@ -1112,17 +1122,19 @@ template {
   display: flex;
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
-  margin-bottom: 2.2222222222rem;
-  padding: 0.5555555556rem; }
-  @media (max-width: 480px) {
-    .catalog__item {
-      width: 100%; } }
+  padding-top: 1.1111111111rem; }
+
+.catalog__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .catalog__info {
-  padding: 0.5555555556rem 2.7777777778rem; }
-  @media (max-width: 480px) {
-    .catalog__info {
-      padding: 0.5555555556rem 1.1111111111rem; } }
+  padding-bottom: 0.5555555556rem;
+  padding-left: 1.6666666667rem; }
 
 .catalog h2 {
   margin-bottom: 1.6666666667rem; }
@@ -1132,7 +1144,7 @@ template {
       margin-bottom: 0.5555555556rem; } }
 
 .catalog p {
-  margin-bottom: 1.6666666667rem; }
+  margin-bottom: 1.1111111111rem; }
   @media (max-width: 480px) {
     .catalog p {
       font-size: 0.7777777778rem; } }
@@ -1144,6 +1156,10 @@ template {
     .catalog__img {
       max-width: 8.3333333333rem;
       border-radius: 1.1111111111rem; } }
+
+.catalog hr {
+  background-color: #918c8c;
+  border: 1px solid #918c8c; }
 
 .breadcrumbs__list {
   display: -webkit-box;
@@ -1171,7 +1187,8 @@ template {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  padding-top: 2.2222222222rem; }
 
 .page__current {
   line-height: 1.7777777778rem;
