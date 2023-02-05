@@ -570,7 +570,7 @@ template {
   font-weight: bold; }
 
 .hero {
-  margin-bottom: 13.3333333333rem; }
+  margin-bottom: 7.7777777778rem; }
 
 .hero__title {
   text-align: center;
@@ -603,7 +603,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 1.5555555556rem;
-  margin-bottom: 8.8888888889rem;
+  margin-bottom: 6.6666666667rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -727,6 +727,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 2.7777777778rem; }
@@ -1282,6 +1285,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.service__item-info {
+  margin-right: 1.1111111111rem; }
 
 .service__info {
   margin-bottom: 1.6666666667rem; }
