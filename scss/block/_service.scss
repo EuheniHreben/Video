@@ -1,15 +1,16 @@
 .service {
-  margin-bottom: rem(180px);
+  margin-bottom: rem(140px);
 }
 
 .service__list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-
+  
   
   @include phones {
-   justify-content: center; 
+    justify-content: center; 
+    align-items: center;
   }
 }
 

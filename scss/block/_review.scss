@@ -74,6 +74,10 @@
   flex-direction: column;
   justify-content: center;
   padding-left: rem(20px);
+  
+  @include phones {
+    padding-left: rem(10px);
+  }
 }
 
 .review__title {
