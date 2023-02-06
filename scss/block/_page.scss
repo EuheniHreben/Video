@@ -8,6 +8,7 @@
 .page__current {
   line-height: rem(32px);
   margin-right: rem(32px);
+  font-weight: bold;
   
   @include phones {
     display: none;
@@ -19,14 +20,15 @@
 }
 
 .page__item {
+  line-height: rem(36px);
+  width: rem(36px);
+  height: rem(36px);
   margin-right: rem(14px);
   font-weight: bold;
-  line-height: rem(32px);
   border-radius: 50%;
   transition: background-color .5s;
   display: block;
-  width: rem(32px);
-  height: rem(32px);
+  cursor: pointer;
   
   @include phones {
     margin-right: rem(8px);

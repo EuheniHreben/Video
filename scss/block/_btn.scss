@@ -38,7 +38,11 @@
     background: #ee3e37;
     color: #fff;
     box-shadow: 0 0 rem(20px) 0 #ee3e37;
-  } 
+  }
+   
+  &:active {
+    color: #000;
+  }
 }
 
 .btn_type_third {
