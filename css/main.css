@@ -692,33 +692,32 @@ template {
   transition: background .5s, -webkit-box-shadow .5s;
   transition: background .5s, box-shadow .5s;
   transition: background .5s, box-shadow .5s, -webkit-box-shadow .5s; }
+  .btn:active {
+    color: #000; }
 
 .btn_type_first {
   background: #f71811; }
-
-.btn_type_first:hover {
-  background: #bb0505;
-  -webkit-box-shadow: 0 0 1.1111111111rem 0 #ee3e37;
-          box-shadow: 0 0 1.1111111111rem 0 #ee3e37; }
+  .btn_type_first:hover {
+    background: #bb0505;
+    -webkit-box-shadow: 0 0 1.1111111111rem 0 #ee3e37;
+            box-shadow: 0 0 1.1111111111rem 0 #ee3e37; }
 
 .btn_type_second {
   background: #fff;
   color: #f50;
   border: 2px solid #FF5500; }
-
-.btn_type_second:hover {
-  background: #ee3e37;
-  color: #fff;
-  -webkit-box-shadow: 0 0 1.1111111111rem 0 #ee3e37;
-          box-shadow: 0 0 1.1111111111rem 0 #ee3e37; }
+  .btn_type_second:hover {
+    background: #ee3e37;
+    color: #fff;
+    -webkit-box-shadow: 0 0 1.1111111111rem 0 #ee3e37;
+            box-shadow: 0 0 1.1111111111rem 0 #ee3e37; }
 
 .btn_type_third {
   background: #4d4b4b; }
-
-.btn_type_third:hover {
-  background: #3d3c3c;
-  -webkit-box-shadow: 0 0 1.1111111111rem 0 #5a5959;
-          box-shadow: 0 0 1.1111111111rem 0 #5a5959; }
+  .btn_type_third:hover {
+    background: #3d3c3c;
+    -webkit-box-shadow: 0 0 1.1111111111rem 0 #5a5959;
+            box-shadow: 0 0 1.1111111111rem 0 #5a5959; }
 
 .news {
   margin-bottom: 6.6666666667rem; }
