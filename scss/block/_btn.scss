@@ -14,7 +14,6 @@
   outline: none;
   align-items: center;
   transition: background .5s, box-shadow .5s;
-
   &:active {
     color: #000;
   }
@@ -22,7 +21,6 @@
 
 .btn_type_first {
   background: #f71811;
-
   &:hover {
     background: #bb0505;
     box-shadow: 0 0 rem(20px) 0 #ee3e37;
@@ -33,13 +31,11 @@
   background: #fff;
   color: #f50;
   border: 2px solid #FF5500;
-
   &:hover {
     background: #ee3e37;
     color: #fff;
     box-shadow: 0 0 rem(20px) 0 #ee3e37;
   }
-   
   &:active {
     color: #000;
   }
@@ -47,7 +43,6 @@
 
 .btn_type_third {
   background: #4d4b4b;
-
   &:hover {
     background: #3d3c3c;
     box-shadow: 0 0 rem(20px) 0 #5a5959

@@ -6,7 +6,6 @@
 }
 
 .form__form {
-
   @include phones {
     width: 100%;
   }
@@ -14,9 +13,7 @@
 
 .form__group {
   display: flex;
-
   &--phones {
-
     @include phones {
       flex-direction: column;
     }
@@ -31,24 +28,20 @@
   padding: rem(20px) rem(30px);
   border: 1px solid transparent;
   border-radius: 5px;
-  
+  &:focus {
+    border-color: #cccccc;
+  }
+  &--textarea {
+    resize: none;
+    height: rem(235px);
+  }
   @include phones {
     margin-right: rem(0px);
   }
 }
 
-.form__input:focus {
-  border-color: #CCCCCC;
-}
-
-.form__input--textarea {
-  resize: none;
-  height: rem(235px);
-}
-
 .form__services {
   width: 40%;
-  
   @include phones {
     width: 40%;
   }
@@ -59,7 +52,6 @@
   flex-wrap: wrap;
   margin-bottom: rem(30px);
   padding-left: rem(10px);
-  
   @include phones {
     width: min-content;
     min-width: 50%;
@@ -76,7 +68,6 @@
 .form__btn {
   display: flex;
   justify-content: end;
-  
   @include phones {
     justify-content: space-around;
   }

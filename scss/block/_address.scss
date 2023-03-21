@@ -1,6 +1,5 @@
 .address {
   font-style: normal;
-
   @include phones {
     display: none;
   }

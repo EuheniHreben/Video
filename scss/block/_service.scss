@@ -6,8 +6,6 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  
-  
   @include phones {
     justify-content: center; 
     align-items: center;
@@ -27,7 +25,6 @@
   transition: box-shadow .3s;
   color: #666;
   overflow: hidden;
-  
   @include phones {
     min-width: 80%;
   }

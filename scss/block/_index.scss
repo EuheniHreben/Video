@@ -20,7 +20,6 @@
 }
 
 .index__img-box {
-  
   @include phones {
     display: flex;
     justify-content: center;
@@ -30,40 +29,53 @@
 
 .index__img {
   margin-bottom: 40px;
-  
   @include phones {
     width: 220%;
   }
+}
+
+#blink {
+  -webkit-animation: blink 3s linear infinite;
+  animation: blink 3s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes blink {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
 }
 
 .index__central {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.index__btn {
-  display: flex;
-  justify-content: center;
-}
-
-.index__central--video {
-  opacity: 0;
-  animation: rotate .8s;
-  animation-fill-mode: forwards;
+  &--video {
+    opacity: 0;
+    animation: rotate .8s;
+    animation-fill-mode: forwards;
+  }
 }
 
 @keyframes rotate {
   from {
     transform: scale(.1) rotate(40deg);
   }
-
   50% {
     transform: rotate(-10deg);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.index__btn {
+  display: flex;
+  justify-content: center;
 }

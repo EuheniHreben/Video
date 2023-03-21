@@ -22,10 +22,9 @@
   margin-bottom: rem(20px);
   opacity: 1;
   transition: opacity .2s ease;
-}
-
-.news__item:hover {
-  opacity: .8;
+  &:hover {
+    opacity: .8;
+  }
 }
 
 .news__img {

@@ -9,7 +9,6 @@
   line-height: rem(32px);
   margin-right: rem(32px);
   font-weight: bold;
-  
   @include phones {
     display: none;
   }
@@ -29,18 +28,15 @@
   transition: background-color .5s;
   display: block;
   cursor: pointer;
-  
+  &:hover {
+    background-color: #FF5500;
+  }
+  &--active {
+    background-color: #FF5500;
+  }
   @include phones {
     margin-right: rem(8px);
   }
-}
-
-.page__item:hover {
-  background-color: #FF5500;
-}
-
-.page__item--active {
-  background-color: #FF5500;
 }
 
 .page__link:hover {

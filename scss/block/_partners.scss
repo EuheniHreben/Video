@@ -3,7 +3,6 @@
   padding-top: rem(80px);
   color: #000;
   padding-bottom: rem(80px);
-
   @include phones {
     display: none;
   }
@@ -25,8 +24,7 @@
   margin-bottom: rem(60px);
   filter: grayscale(1);
   transition: filter .5s;
-}
-
-.partner__item:hover {
-  filter: grayscale(0);
+  &:hover {
+    filter: grayscale(0);
+  }
 }

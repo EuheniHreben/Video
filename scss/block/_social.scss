@@ -18,32 +18,28 @@
 
 .social__item--tel {
   background: url(../img/socials/telegram.png);
-}
-
-.social__item--tel:hover {
-  background: url(../img/socials/t2.png);
+  &:hover {
+    background: url(../img/socials/t2.png);
+  }
 }
 
 .social__item--vk {
-  background: url(../img/socials/vk.png) center center no-repeat;
-}
-
-.social__item--vk:hover {
-  background: url(../img/socials/vk2.png) center center no-repeat;
+  background: url(../img/socials/vk.png);
+  &:hover {
+    background: url(../img/socials/vk2.png);
+  }
 }
 
 .social__item--f {
-  background: url(../img/socials/f.png) center center no-repeat;
-}
-
-.social__item--f:hover {
-  background: url(../img/socials/f2.png) center center no-repeat;
+  background: url(../img/socials/f.png);
+  &:hover {
+    background: url(../img/socials/f2.png);
+  }
 }
 
 .social__item--in {
-  background: url(../img/socials/in.png) center center no-repeat;
-}
-
-.social__item--in:hover {
-  background: url(../img/socials/in2.png) center center no-repeat;
+  background: url(../img/socials/in.png);
+  &:hover {
+    background: url(../img/socials/in2.png);
+  }
 }

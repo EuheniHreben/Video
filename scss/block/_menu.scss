@@ -4,14 +4,12 @@
 
 .header .menu__list {
   padding-left: rem(160px);
-
   @include phones {
     padding-left: rem(0px);
   }
 }
 
 .footer .menu__list {
-
   @include phones {
     display: none;
   }
@@ -24,16 +22,16 @@
 
 .menu__item {
   margin-right: rem(54px);
-  
   @include phones {
     margin-right: rem(20px);
   }
 }
 
-.menu__link:hover {
-  color: #FF3D00;
-} 
-
-.menu__link--active {
-  color: #FF3D00;
+.menu__link {
+  &--active {
+    color: #FF3D00;
+  }
+  &:hover {
+    color: #FF3D00;
+  }
 }

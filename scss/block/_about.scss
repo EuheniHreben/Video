@@ -1,6 +1,5 @@
 .about {
   margin-bottom: rem(50px);
-
   @include phones {
     display: none;
   }
@@ -13,7 +12,6 @@
 
 .about__item {
   width: 50%;
-
   @include phones {
     font-size: rem(12px);
   }
@@ -38,7 +36,6 @@
   top: 0;
   padding: rem(50px);
   color: #000;
-  
   @include phones {
       padding: rem(20px);
     }
