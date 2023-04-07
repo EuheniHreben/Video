@@ -20,8 +20,8 @@
 
 .page__item {
   line-height: rem(36px);
-  width: rem(36px);
-  height: rem(36px);
+  width: rem(40px);
+  height: rem(40px);
   margin-right: rem(14px);
   font-weight: bold;
   border-radius: 50%;
@@ -29,10 +29,10 @@
   display: block;
   cursor: pointer;
   &:hover {
-    background-color: #FF5500;
+    background-color: rgba(255, 85, 0, 1);
   }
   &--active {
-    background-color: #FF5500;
+    background-color: rgba(255, 85, 0, .6);
   }
   @include phones {
     margin-right: rem(8px);

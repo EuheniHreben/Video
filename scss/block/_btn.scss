@@ -13,38 +13,28 @@
   cursor: pointer;
   outline: none;
   align-items: center;
-  transition: background .5s, box-shadow .5s;
-  &:active {
-    color: #000;
-  }
 }
 
 .btn_type_first {
-  background: #f71811;
-  &:hover {
-    background: #bb0505;
-    box-shadow: 0 0 rem(20px) 0 #ee3e37;
+  background: #FF5500;
+  &:active {
+    background: #FF3D00;
   }
 }
 
 .btn_type_second {
   background: #fff;
-  color: #f50;
+  color: #FF5500;
   border: 2px solid #FF5500;
-  &:hover {
-    background: #ee3e37;
-    color: #fff;
-    box-shadow: 0 0 rem(20px) 0 #ee3e37;
-  }
   &:active {
-    color: #000;
+    background: #FF3D00;
+    color: #fff;
   }
 }
 
 .btn_type_third {
-  background: #4d4b4b;
-  &:hover {
-    background: #3d3c3c;
-    box-shadow: 0 0 rem(20px) 0 #5a5959
+  background: #8E8E8E;
+  &:active {
+    background: #2B2B2B;
   }
 }

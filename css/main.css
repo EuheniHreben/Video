@@ -714,39 +714,25 @@ template {
   outline: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: background .5s, -webkit-box-shadow .5s;
-  transition: background .5s, -webkit-box-shadow .5s;
-  transition: background .5s, box-shadow .5s;
-  transition: background .5s, box-shadow .5s, -webkit-box-shadow .5s; }
-  .btn:active {
-    color: #000; }
+          align-items: center; }
 
 .btn_type_first {
-  background: #f71811; }
-  .btn_type_first:hover {
-    background: #bb0505;
-    -webkit-box-shadow: 0 0 1.1111111111rem 0 #ee3e37;
-            box-shadow: 0 0 1.1111111111rem 0 #ee3e37; }
+  background: #FF5500; }
+  .btn_type_first:active {
+    background: #FF3D00; }
 
 .btn_type_second {
   background: #fff;
-  color: #f50;
+  color: #FF5500;
   border: 2px solid #FF5500; }
-  .btn_type_second:hover {
-    background: #ee3e37;
-    color: #fff;
-    -webkit-box-shadow: 0 0 1.1111111111rem 0 #ee3e37;
-            box-shadow: 0 0 1.1111111111rem 0 #ee3e37; }
   .btn_type_second:active {
-    color: #000; }
+    background: #FF3D00;
+    color: #fff; }
 
 .btn_type_third {
-  background: #4d4b4b; }
-  .btn_type_third:hover {
-    background: #3d3c3c;
-    -webkit-box-shadow: 0 0 1.1111111111rem 0 #5a5959;
-            box-shadow: 0 0 1.1111111111rem 0 #5a5959; }
+  background: #8E8E8E; }
+  .btn_type_third:active {
+    background: #2B2B2B; }
 
 .news {
   margin-bottom: 6.6666666667rem; }
@@ -782,7 +768,7 @@ template {
 
 .news__img {
   border-radius: 1.9444444444rem;
-  width: 100%;
+  max-width: 100%;
   height: 100%; }
 
 .news__desc {
@@ -1031,7 +1017,8 @@ template {
 .partners__box {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  max-width: 100%; }
 
 .partner__list {
   -webkit-box-orient: vertical;
@@ -1230,8 +1217,8 @@ template {
 
 .page__item {
   line-height: 2rem;
-  width: 2rem;
-  height: 2rem;
+  width: 2.2222222222rem;
+  height: 2.2222222222rem;
   margin-right: 0.7777777778rem;
   font-weight: bold;
   border-radius: 50%;
@@ -1240,9 +1227,9 @@ template {
   display: block;
   cursor: pointer; }
   .page__item:hover {
-    background-color: #FF5500; }
+    background-color: #ff5500; }
   .page__item--active {
-    background-color: #FF5500; }
+    background-color: rgba(255, 85, 0, 0.6); }
   @media (max-width: 480px) {
     .page__item {
       margin-right: 0.4444444444rem; } }
