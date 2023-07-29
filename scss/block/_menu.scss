@@ -3,9 +3,9 @@
 }
 
 .header .menu__list {
-  padding-left: rem(160px);
+  margin-left: rem(160px);
   @include phones {
-    padding-left: rem(0px);
+    margin-left: 0px;
   }
 }
 
@@ -17,7 +17,6 @@
 
 .menu__list {
   display: flex;
-  padding-left: rem(80px);
 }
 
 .menu__item {

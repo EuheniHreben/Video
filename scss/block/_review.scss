@@ -53,8 +53,8 @@
     content: "";
     display: inline-block;
     background: url(../img/socials/vk-blue.png) no-repeat;
-    width: 30px;
-    height: 30px;
+    width: rem(30px);
+    height: rem(30px);
     margin-left: 6px;
     transform: translateY(5px);
   }
@@ -95,7 +95,7 @@
   width: rem(139px);
   height: rem(139px);
   @include phones {
-    width: rem(109px);
-    height: rem(109px);
+    width: rem(89px);
+    height: rem(89px);
   }
 }

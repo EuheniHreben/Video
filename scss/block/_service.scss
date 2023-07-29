@@ -13,11 +13,11 @@
 }
 
 .service__item {
-  width: rem(360px);
-  min-height: rem(550px);
+  width: rem(320px);
+  min-height: rem(450px);
   background-color: #fff;
-  border-radius: 5px;
-  margin: rem(10px);
+  border-radius: 10px;
+  margin: 20px 10px;
   padding: rem(30px);
   display: flex;
   flex-direction: column;
@@ -37,19 +37,29 @@
 .service__title {
   margin-bottom: rem(20px);
   color: #000;
+  font-weight: bold;
 }
 
 .service__list-info {
   margin-bottom: rem(26px);
   display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
 .service__item-info {
-  margin-right: rem(20px);
+  width: 45%;
 }
 
-.service__info {
-  margin-bottom: rem(30px);
+.service__item-price {
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.service__info-desc {
+  margin-bottom: rem(10px);
+  font-size: 14px;
 }
 
 .service__btn {

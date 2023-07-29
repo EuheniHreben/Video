@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: rem(18px) rem(50px);
+  padding: rem(18px) rem(48px);
   margin: rem(4px);
   color: #fff;
   font-size: rem(14px);
@@ -13,6 +13,7 @@
   cursor: pointer;
   outline: none;
   align-items: center;
+  transition: box-shadow .3s;
 }
 
 .btn_type_first {
@@ -20,12 +21,19 @@
   &:active {
     background: #FF3D00;
   }
+  &:hover {
+    box-shadow: 0 0 20px 0 #ff3c00c9;
+  }
 }
 
 .btn_type_second {
   background: #fff;
   color: #FF5500;
   border: 2px solid #FF5500;
+  &:hover {
+    background: #FF3D00;
+    color: #fff;
+  }
   &:active {
     background: #FF3D00;
     color: #fff;
@@ -36,5 +44,8 @@
   background: #8E8E8E;
   &:active {
     background: #2B2B2B;
+  }
+  &:hover {
+    box-shadow: 0 0 20px 0 #666;
   }
 }

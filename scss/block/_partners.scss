@@ -8,7 +8,7 @@
   }
 }
 
-.partners__box {
+.partner__box {
   display: flex;
   max-width: 100%;
 }
@@ -22,9 +22,14 @@
 .partner__item {
   margin-right: rem(80px);
   margin-bottom: rem(60px);
-  filter: grayscale(1);
   transition: filter .5s;
+  filter: blur(1px) grayscale(1);
   &:hover {
-    filter: grayscale(0);
+    filter: blur(0px) grayscale(0);
   }
+}
+
+.partner__img-box {
+  display: flex;
+  justify-content: center;
 }

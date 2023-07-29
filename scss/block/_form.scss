@@ -18,6 +18,11 @@
       flex-direction: column;
     }
   }
+  &--tags {
+    @include phones {
+      justify-content: space-between;
+    }
+  }
 }
 
 .form__input {

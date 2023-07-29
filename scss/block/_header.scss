@@ -4,4 +4,7 @@
   padding-top: rem(28px);
   margin-bottom: rem(120px);
   align-items: center;
+  @include phones {
+    margin-bottom: rem(80px);
+  }
 }
