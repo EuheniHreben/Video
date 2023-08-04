@@ -2,13 +2,6 @@
   font-size: rem(14px);
 }
 
-.header .menu__list {
-  margin-left: rem(160px);
-  @include phones {
-    margin-left: 0px;
-  }
-}
-
 .footer .menu__list {
   @include phones {
     display: none;
@@ -21,16 +14,16 @@
 
 .menu__item {
   margin-right: rem(54px);
-  @include phones {
-    margin-right: rem(20px);
+  &:last-child {
+    margin-right: 0px;
   }
-}
-
-.menu__link {
-  &--active {
+  &--active .menu__link {
     color: #FF3D00;
   }
   &:hover {
     color: #FF3D00;
+  }
+  @include phones {
+    margin-right: rem(20px);
   }
 }

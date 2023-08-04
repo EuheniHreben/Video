@@ -19,11 +19,25 @@
 .catalog__img-box {
   display: flex;
   align-items: center;
+  width: 100%;
+  flex: 3;
+}
+
+.catalog__img {
+  width: 100%;
+  height: auto;
 }
 
 .catalog__info {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
   padding-bottom: rem(10px);
   padding-left: rem(30px);
+}
+
+.catalog__btn {
+  margin-top: auto;
 }
 
 .catalog h2 {

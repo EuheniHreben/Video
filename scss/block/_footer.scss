@@ -1,13 +1,16 @@
-.footer-box {
+.footer-container {
   display: flex;
   justify-content: space-between;
   padding-top: rem(40px);
   margin-bottom: rem(45px);
   align-items: center;
-}
-
-
-.footer hr {
-  background-color: #666;
-  border: 1px solid #666;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #666;
+  }
 }

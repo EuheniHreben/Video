@@ -20,10 +20,11 @@ html, body {
 }
 
 .wrapper {
-  min-height: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  flex: 1;
 }
 
 .wrapper-main {
@@ -34,10 +35,6 @@ html, body {
   width: 95%;
   max-width: $containerWidth;
   margin: 0 auto;
-}
-
-.content {
-  flex: 1 1 auto;
 }
 
 ul > li {
@@ -73,10 +70,9 @@ h1 {
 }
 
 h2 {
-  display: block;
   font-size: 36px;
+  display: block;
   font-weight: bold;
-  margin-bottom: rem(50px);
 }
 
 h3 {

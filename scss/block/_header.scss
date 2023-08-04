@@ -1,10 +1,19 @@
-.header {
+.header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: rem(28px);
   margin-bottom: rem(120px);
-  align-items: center;
   @include phones {
     margin-bottom: rem(80px);
   }
+}
+
+.header-wrapper {
+  background: url(../img/top-line.png) center center / cover no-repeat;
+  max-height: rem(450px);
+}
+
+.header-wrapper h1 {
+  margin-bottom: rem(80px);
 }
