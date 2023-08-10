@@ -23,15 +23,12 @@
   @include phones {
     display: flex;
     justify-content: center;
-    width: 40%;
   }
 }
 
 .index__img {
   margin-bottom: 40px;
-  @include phones {
-    width: 220%;
-  }
+  width: 100%;
 }
 
 #blink {
@@ -77,5 +74,7 @@
 
 .index__btn {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }

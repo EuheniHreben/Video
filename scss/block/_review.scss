@@ -3,6 +3,7 @@
   color: #000;
   padding-top: rem(60px);
   padding-bottom: rem(60px);
+  // font-size: $baseFontSize;
 }
 
 .review__list {
@@ -21,7 +22,7 @@
   flex: 1;
   flex-shrink: 1;
   margin: rem(20px);
-  border-radius: rem(15px);
+  border-radius: 15px;
   padding: rem(50px) rem(30px);
   background-color: #F4F5F5;
   transition: box-shadow .3s;
@@ -36,14 +37,16 @@
 
 .review__contact {
   display: flex;  
+  align-items: center;
   margin-bottom: rem(30px);
 }
 
 .review__name {
-  font-size: rem(24px);
+  font-size: rem(22px);
   font-weight: bold;
   color: #2E77A4;
   white-space: nowrap;
+  margin-bottom: 10px;
   &:hover {
     text-decoration: underline;
   }
@@ -53,11 +56,11 @@
     background: url(../img/socials/vk-blue.png) no-repeat;
     width: rem(30px);
     height: rem(30px);
-    margin-left: 6px;
-    transform: translateY(5px);
+    margin-left: rem(6px);
+    transform: translateY(8px);
   }
   @include phones {
-    font-size: rem(18px);
+    font-size: rem(16px);
     }
 }
 
@@ -90,8 +93,8 @@
 }
 
 .review__img {
-  width: rem(139px);
-  height: rem(139px);
+  max-width: rem(139px);
+  max-height: rem(139px);
   @include phones {
     width: rem(89px);
     height: rem(89px);
