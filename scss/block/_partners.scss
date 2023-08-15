@@ -8,6 +8,9 @@
   @include phones {
     display: none;
   }
+  & h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .partner__list {
@@ -18,7 +21,7 @@
 }
 
 .partner__item {
-  margin-right: rem(80px);
+  margin-right: rem(60px);
   margin-bottom: rem(60px);
   transition: filter .5s;
   filter: grayscale(1);

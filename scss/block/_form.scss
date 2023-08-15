@@ -24,7 +24,7 @@
   }
   &--tags {
     @include phones {
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 }
@@ -37,6 +37,9 @@
   padding: rem(20px) rem(30px);
   border: 1px solid transparent;
   border-radius: 5px;
+  &:last-child {
+    margin-right: 0px;
+  }
   &:focus {
     border-color: #cccccc;
   }
@@ -72,6 +75,9 @@
 .form__item {
   padding-left: rem(20px);
   padding-bottom: rem(10px);
+  @include phones {
+    padding-left: 0px;
+  }
 }
 
 .form__btn {
