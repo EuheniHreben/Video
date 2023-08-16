@@ -577,8 +577,8 @@ template {
   .dropdown:hover {
     color: #FF3D00; }
     .dropdown:hover .dropdown__menu {
-      right: 0;
-      opacity: 1; }
+      opacity: 1;
+      right: 0; }
 
 .dropdown__link {
   font-size: 0.8125rem;
@@ -589,28 +589,38 @@ template {
 
 .dropdown__menu {
   position: absolute;
-  opacity: 0;
   background-color: #EDEDED;
   color: #000;
   white-space: nowrap;
   border: 1px solid transparent;
   padding: 10px;
   border-radius: 0.5625rem;
-  right: -624.9375rem;
   -webkit-transition: opacity .4s;
   transition: opacity .4s;
-  top: 30px; }
-  .dropdown__menu::after {
+  text-align: left;
+  top: 30px;
+  opacity: 0;
+  right: -9999px; }
+  .dropdown__menu::before {
     content: "";
     display: block;
-    left: 60%;
     position: absolute;
-    top: -33px;
-    z-index: 1000;
-    border: 20px solid transparent;
-    width: 0;
-    height: 0;
-    border-color: transparent transparent #EDEDED transparent; }
+    height: 30px;
+    width: 120%;
+    left: 0;
+    right: 0;
+    top: -28px; }
+
+.dropdown__triangle {
+  display: block;
+  left: 60%;
+  position: absolute;
+  top: -33px;
+  z-index: 1000;
+  border: 20px solid transparent;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #EDEDED transparent; }
 
 .dropdown__list {
   font-size: 0.8125rem; }
