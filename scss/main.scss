@@ -8,7 +8,7 @@
 @import 'block/_index';
 @import 'block/_about';
 @import 'block/_dropdown';
-@import 'block/_hero';
+@import 'block/_hero-section';
 @import 'block/_logo';
 @import 'block/_header';
 @import 'block/_address';
@@ -19,6 +19,7 @@
 @import 'block/_banner';
 @import 'block/_footer';
 @import 'block/_social';
+@import 'block/_reviews';
 @import 'block/_review';
 @import 'block/_tag';
 @import 'block/_lang';
@@ -27,4 +28,6 @@
 @import 'block/_catalog';
 @import 'block/_breadcrumbs';
 @import 'block/_page';
-@import 'block/_service';
+@import 'block/_services';
+@import 'block/_service.scss';
+@import 'block/_top-line.scss';

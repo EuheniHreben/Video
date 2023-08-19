@@ -1,26 +1,8 @@
 .review {
-  background-color: #fff;
-  color: #000;
-  padding-top: rem(60px);
-  padding-bottom: rem(60px);
-}
-
-.review__list {
-  column-count: 2;
-  column-width: 2rem;
-  margin-bottom: rem(50px);
-  @include phones {
-    column-count: 1;
-    width: 100%;
-  }
-}
-
-.review__item {
   display: inline-flex;
   flex-direction: column;
   flex: 1;
   flex-shrink: 1;
-  margin: rem(20px);
   border-radius: 15px;
   padding: rem(50px) rem(30px);
   background-color: #F4F5F5;

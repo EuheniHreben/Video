@@ -1,0 +1,17 @@
+.services {
+  margin-bottom: rem(140px);
+}
+
+.services__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  @include phones {
+    justify-content: center; 
+    align-items: center;
+  }
+}
+
+.services__item {
+  margin: 20px 10px;
+}

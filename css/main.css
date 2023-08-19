@@ -628,22 +628,22 @@ template {
 .dropdown__item--title {
   font-weight: bold; }
 
-.hero {
+.hero-section {
   margin-bottom: 8.75rem; }
 
-.hero h1 {
+.hero-section h1 {
   font-size: 4.5rem;
   text-align: center;
   margin-bottom: 1.125rem; }
   @media (max-width: 480px) {
-    .hero h1 {
+    .hero-section h1 {
       font-size: 3.25rem; } }
 
-.hero p {
+.hero-section p {
   text-align: center;
   margin-bottom: 2.75rem; }
 
-.hero__btn {
+.hero-section__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +662,9 @@ template {
     .logo__img {
       width: 4.375rem; } }
 
-.header-container {
+.header {
+  margin-bottom: 7.5rem;
+  padding-top: 1.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,19 +673,10 @@ template {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding-top: 1.75rem;
-  margin-bottom: 7.5rem; }
+          align-items: center; }
   @media (max-width: 480px) {
-    .header-container {
+    .header {
       margin-bottom: 5rem; } }
-
-.header-wrapper {
-  background: url(../img/top-line.png) center center/cover no-repeat;
-  max-height: 28.125rem; }
-
-.header-wrapper h1 {
-  margin-bottom: 5rem; }
 
 .address {
   font-style: normal; }
@@ -913,25 +906,28 @@ template {
   .social__item--in:hover {
     background: url(../img/socials/in2.png); }
 
-.review {
+.reviews {
   background-color: #fff;
   color: #000;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem; }
 
-.review__list {
+.reviews__list {
   -webkit-column-count: 2;
           column-count: 2;
   -webkit-column-width: 2rem;
           column-width: 2rem;
   margin-bottom: 3.125rem; }
   @media (max-width: 480px) {
-    .review__list {
+    .reviews__list {
       -webkit-column-count: 1;
               column-count: 1;
       width: 100%; } }
 
-.review__item {
+.reviews__item {
+  margin: 1.25rem; }
+
+.review {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -944,7 +940,6 @@ template {
           flex: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  margin: 1.25rem;
   border-radius: 15px;
   padding: 3.125rem 1.875rem;
   background-color: #F4F5F5;
@@ -952,11 +947,11 @@ template {
   transition: -webkit-box-shadow .3s;
   transition: box-shadow .3s;
   transition: box-shadow .3s, -webkit-box-shadow .3s; }
-  .review__item:hover {
+  .review:hover {
     -webkit-box-shadow: 2px 0.625rem 1.5625rem #3e3a61;
             box-shadow: 2px 0.625rem 1.5625rem #3e3a61; }
   @media (max-width: 480px) {
-    .review__item {
+    .review {
       width: 90%;
       padding: 1.5625rem 1.875rem; } }
 
@@ -1303,6 +1298,10 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 2.5rem; }
+  .page--dark {
+    color: #fff; }
+  .page--light {
+    color: #000; }
   @media (max-width: 480px) {
     .page {
       -webkit-box-orient: vertical;
@@ -1346,13 +1345,10 @@ template {
     .page__item {
       margin-right: 0.5rem; } }
 
-.page__link:hover {
-  border-radius: 50%; }
-
-.service {
+.services {
   margin-bottom: 8.75rem; }
 
-.service__list {
+.services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1362,7 +1358,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (max-width: 480px) {
-    .service__list {
+    .services__list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -1370,7 +1366,10 @@ template {
           -ms-flex-align: center;
               align-items: center; } }
 
-.service__item {
+.services__item {
+  margin: 20px 10px; }
+
+.service {
   max-width: 20rem;
   width: 100%;
   min-height: 28.125rem;
@@ -1395,7 +1394,7 @@ template {
   color: #666;
   overflow: hidden; }
   @media (max-width: 480px) {
-    .service__item {
+    .service {
       min-width: 80%; } }
 
 .service__img-box {
@@ -1436,5 +1435,12 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.top-line {
+  background: url(../img/top-line.png) center center/cover no-repeat;
+  max-height: 28.125rem; }
+
+.top-line h1 {
+  margin-bottom: 5rem; }
 
 /*# sourceMappingURL=main.css.map */
