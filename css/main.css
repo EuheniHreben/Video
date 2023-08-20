@@ -756,7 +756,8 @@ template {
 .btn_type_first {
   background: #FF5500; }
   .btn_type_first:active {
-    background: #FF3D00; }
+    background: #FF3D00;
+    color: #000; }
   .btn_type_first:hover {
     -webkit-box-shadow: 0 0 20px 0 #ff3c00c9;
             box-shadow: 0 0 20px 0 #ff3c00c9; }
@@ -770,7 +771,7 @@ template {
     color: #fff; }
   .btn_type_second:active {
     background: #FF3D00;
-    color: #fff; }
+    color: #000; }
 
 .btn_type_third {
   background: #8E8E8E; }

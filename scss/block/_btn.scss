@@ -20,6 +20,7 @@
   background: #FF5500;
   &:active {
     background: #FF3D00;
+    color: #000;
   }
   &:hover {
     box-shadow: 0 0 20px 0 #ff3c00c9;
@@ -36,7 +37,7 @@
   }
   &:active {
     background: #FF3D00;
-    color: #fff;
+    color: #000;
   }
 }
 
