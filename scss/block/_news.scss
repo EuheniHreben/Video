@@ -24,7 +24,7 @@
   margin: rem(20px) rem(20px);
   text-shadow: 1px 1px black;
   opacity: 1;
-  transition: opacity .2s ease;
+  transition: opacity .1s linear;
   &:hover {
     opacity: .8;
   }

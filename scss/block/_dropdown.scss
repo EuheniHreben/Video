@@ -15,7 +15,7 @@
   font-size: rem(13px);
   text-decoration: underline;
   margin-bottom: 10px;
-  transition: color 0.3s;
+  transition: color 0.2s linear;
 }
 
 .dropdown__menu {
@@ -26,11 +26,11 @@
   border: 1px solid transparent;
   padding: 10px;
   border-radius: rem(9px);
-  transition: opacity .4s;
   text-align: left;
   top: 30px;
   opacity: 0;
   right: -9999px;
+  transition: opacity .4s linear;
   &::before {
     content: "";
     display: block;

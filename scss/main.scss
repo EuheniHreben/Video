@@ -1,3 +1,4 @@
+
 // components
 @import '_variables';
 @import '_adaptive';
@@ -5,29 +6,34 @@
 @import '_normalize';
 
 // blocks
-@import 'block/_index';
-@import 'block/_about';
-@import 'block/_dropdown';
-@import 'block/_hero-section';
-@import 'block/_logo';
+// header
 @import 'block/_header';
-@import 'block/_address';
-@import 'block/_control';
+@import 'block/_logo';
 @import 'block/_menu';
-@import 'block/_btn';
-@import 'block/_news';
-@import 'block/_banner';
-@import 'block/_footer';
-@import 'block/_social';
+@import 'block/_address';
+@import 'block/_dropdown';
+@import 'block/_lang';
+@import 'block/_top-line.scss';
+
+//main
+@import 'block/_index';
+@import 'block/_hero-section';
+@import 'block/_breadcrumbs';
+@import 'block/_catalog';
+@import 'block/_services';
+@import 'block/_service.scss';
+@import 'block/_page';
+@import 'block/_about';
 @import 'block/_reviews';
 @import 'block/_review';
 @import 'block/_tag';
-@import 'block/_lang';
-@import 'block/_partners';
 @import 'block/_form';
-@import 'block/_catalog';
-@import 'block/_breadcrumbs';
-@import 'block/_page';
-@import 'block/_services';
-@import 'block/_service.scss';
-@import 'block/_top-line.scss';
+@import 'block/_partners';
+@import 'block/_banner';
+@import 'block/_news';
+@import 'block/_btn';
+@import 'block/_control';
+
+//footer
+@import 'block/_footer';
+@import 'block/_social';

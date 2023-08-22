@@ -1,8 +1,10 @@
 .tag {
-  display: inline-block;
+  display: inline-flex;
+  text-align: center;
   background-color: #F2D4C9;
-  padding: rem(10px) rem(25px);
-  border-radius: rem(35px);
+  padding: 10px 15px;
+  border-radius: 35px;
   white-space: nowrap;
-  font-size: rem(13px);
+  font-size: 13px;
+  transition: background-color .4s linear;
 }

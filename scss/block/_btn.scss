@@ -11,12 +11,13 @@
   border: 1px solid transparent;
   cursor: pointer;
   outline: none;
-  align-items: center;
-  transition: box-shadow .3s;
+  transition: background .2s linear;
+  transition: color .2s linear;
   overflow: hidden;
 }
 
 .btn_type_first {
+  transition: box-shadow .2s linear;
   background: #FF5500;
   &:active {
     background: #FF3D00;
@@ -42,9 +43,11 @@
 }
 
 .btn_type_third {
+  transition: box-shadow .2s linear;
   background: #8E8E8E;
   &:active {
     background: #2B2B2B;
+    color: #fff;
   }
   &:hover {
     box-shadow: 0 0 20px 0 #666;

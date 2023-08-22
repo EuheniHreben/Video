@@ -36,11 +36,13 @@
   margin-right: rem(14px);
   font-weight: bold;
   border-radius: 50%;
-  transition: background-color .5s;
   display: block;
   cursor: pointer;
   &:hover {
+    transition: background-color .4s linear;
+    transition: box-shadow .1s linear;
     background-color: rgba(255, 85, 0, 1);
+    box-shadow: 0 0 20px 0 #ff3c00c9;
   }
   &--active {
     background-color: rgba(255, 85, 0, 1);

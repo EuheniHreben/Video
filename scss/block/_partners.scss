@@ -23,7 +23,7 @@
 .partner__item {
   margin-right: rem(60px);
   margin-bottom: rem(60px);
-  transition: filter .5s;
+  transition: filter .5s linear;
   filter: grayscale(1);
   &:hover {
     filter: grayscale(0);
