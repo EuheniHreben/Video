@@ -938,15 +938,15 @@ template {
   display: block;
   cursor: pointer; }
   .page__item:hover {
-    -webkit-transition: background-color .4s linear;
-    transition: background-color .4s linear;
+    background: #ff5500;
+    -webkit-box-shadow: 0 0 20px 0 #ff3c00c9;
+            box-shadow: 0 0 20px 0 #ff3c00c9;
+    -webkit-transition: background .2s linear;
+    transition: background .2s linear;
     -webkit-transition: -webkit-box-shadow .1s linear;
     transition: -webkit-box-shadow .1s linear;
     transition: box-shadow .1s linear;
-    transition: box-shadow .1s linear, -webkit-box-shadow .1s linear;
-    background-color: #ff5500;
-    -webkit-box-shadow: 0 0 20px 0 #ff3c00c9;
-            box-shadow: 0 0 20px 0 #ff3c00c9; }
+    transition: box-shadow .1s linear, -webkit-box-shadow .1s linear; }
   .page__item--active {
     background-color: #ff5500; }
   @media (max-width: 480px) {
@@ -1145,8 +1145,8 @@ template {
   border-radius: 35px;
   white-space: nowrap;
   font-size: 13px;
-  -webkit-transition: background-color .4s linear;
-  transition: background-color .4s linear; }
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear; }
 
 .form {
   background-color: #F4F5F5;
@@ -1373,24 +1373,25 @@ template {
   border: 1px solid transparent;
   cursor: pointer;
   outline: none;
+  overflow: hidden;
   -webkit-transition: background .2s linear;
   transition: background .2s linear;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
-  overflow: hidden; }
-
-.btn_type_first {
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
   -webkit-transition: -webkit-box-shadow .2s linear;
   transition: -webkit-box-shadow .2s linear;
   transition: box-shadow .2s linear;
-  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear; }
+  .btn:active {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+
+.btn_type_first {
   background: #FF5500; }
-  .btn_type_first:active {
-    background: #FF3D00;
-    color: #000; }
-  .btn_type_first:hover {
-    -webkit-box-shadow: 0 0 20px 0 #ff3c00c9;
-            box-shadow: 0 0 20px 0 #ff3c00c9; }
 
 .btn_type_second {
   background: #fff;
@@ -1399,22 +1400,9 @@ template {
   .btn_type_second:hover {
     background: #FF3D00;
     color: #fff; }
-  .btn_type_second:active {
-    background: #FF3D00;
-    color: #000; }
 
 .btn_type_third {
-  -webkit-transition: -webkit-box-shadow .2s linear;
-  transition: -webkit-box-shadow .2s linear;
-  transition: box-shadow .2s linear;
-  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
   background: #8E8E8E; }
-  .btn_type_third:active {
-    background: #2B2B2B;
-    color: #fff; }
-  .btn_type_third:hover {
-    -webkit-box-shadow: 0 0 20px 0 #666;
-            box-shadow: 0 0 20px 0 #666; }
 
 .control__input {
   -webkit-appearance: none;

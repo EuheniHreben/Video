@@ -11,21 +11,18 @@
   border: 1px solid transparent;
   cursor: pointer;
   outline: none;
+  overflow: hidden;
   transition: background .2s linear;
   transition: color .2s linear;
-  overflow: hidden;
+  transition: transform .2s linear;
+  transition: box-shadow .2s linear;
+  &:active {
+    transform: translateY(4px);
+  }
 }
 
 .btn_type_first {
-  transition: box-shadow .2s linear;
   background: #FF5500;
-  &:active {
-    background: #FF3D00;
-    color: #000;
-  }
-  &:hover {
-    box-shadow: 0 0 20px 0 #ff3c00c9;
-  }
 }
 
 .btn_type_second {
@@ -36,20 +33,8 @@
     background: #FF3D00;
     color: #fff;
   }
-  &:active {
-    background: #FF3D00;
-    color: #000;
-  }
 }
 
 .btn_type_third {
-  transition: box-shadow .2s linear;
   background: #8E8E8E;
-  &:active {
-    background: #2B2B2B;
-    color: #fff;
-  }
-  &:hover {
-    box-shadow: 0 0 20px 0 #666;
-  }
 }
