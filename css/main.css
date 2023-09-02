@@ -616,9 +616,12 @@ template {
           justify-content: center;
   gap: 10px; }
 
+:root {
+  --animation-time: 4s; }
+
 #blink {
-  -webkit-animation: blink 4s linear infinite;
-  animation: blink 4s linear infinite; }
+  -webkit-animation: blink var(--animation-time) linear infinite;
+  animation: blink var(--animation-time) linear infinite; }
 
 @-webkit-keyframes blink {
   0% {
@@ -1140,13 +1143,21 @@ template {
   display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
-  background-color: #F2D4C9;
+  cursor: pointer;
+  background: #F2D4C9;
   padding: 10px 15px;
   border-radius: 35px;
   white-space: nowrap;
   font-size: 13px;
-  -webkit-transition: background-color .2s linear;
-  transition: background-color .2s linear; }
+  -webkit-transition: background .2s linear;
+  transition: background .2s linear;
+  -webkit-transition: -webkit-transform .1s linear;
+  transition: -webkit-transform .1s linear;
+  transition: transform .1s linear;
+  transition: transform .1s linear, -webkit-transform .1s linear; }
+  .tag:active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
 
 .form {
   background-color: #F4F5F5;
@@ -1378,14 +1389,14 @@ template {
   transition: background .2s linear;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
-  -webkit-transition: -webkit-transform .2s linear;
-  transition: -webkit-transform .2s linear;
-  transition: transform .2s linear;
-  transition: transform .2s linear, -webkit-transform .2s linear;
   -webkit-transition: -webkit-box-shadow .2s linear;
   transition: -webkit-box-shadow .2s linear;
   transition: box-shadow .2s linear;
-  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear; }
+  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+  -webkit-transition: -webkit-transform .1s linear;
+  transition: -webkit-transform .1s linear;
+  transition: transform .1s linear;
+  transition: transform .1s linear, -webkit-transform .1s linear; }
   .btn:active {
     -webkit-transform: translateY(4px);
             transform: translateY(4px); }
@@ -1410,11 +1421,8 @@ template {
           appearance: none; }
 
 .control__input:checked ~ .control__tag {
-  background-color: #e95019; }
-
-.control__tag {
-  background-color: #E7E7E7;
-  cursor: pointer; }
+  background: #FF5500;
+  color: #fff; }
 
 .footer-container {
   display: -webkit-box;

@@ -49,9 +49,13 @@
   gap: 10px;
 }
 
+:root {
+  --animation-time: 4s; 
+}
+
 #blink {
-  -webkit-animation: blink 4s linear infinite;
-  animation: blink 4s linear infinite;
+  -webkit-animation: blink var(--animation-time) linear infinite;
+  animation: blink var(--animation-time) linear infinite;
 }
 
 @-webkit-keyframes blink {

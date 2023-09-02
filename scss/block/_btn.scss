@@ -14,8 +14,8 @@
   overflow: hidden;
   transition: background .2s linear;
   transition: color .2s linear;
-  transition: transform .2s linear;
   transition: box-shadow .2s linear;
+  transition: transform .1s linear;
   &:active {
     transform: translateY(4px);
   }

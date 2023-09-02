@@ -3,10 +3,6 @@
 }
 
 .control__input:checked ~ .control__tag {
-  background-color: #e95019;
-}
-
-.control__tag {
-  background-color: #E7E7E7;
-  cursor: pointer;
+  background: #FF5500;
+  color: #fff;
 }
