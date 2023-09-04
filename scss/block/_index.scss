@@ -37,7 +37,7 @@
   align-items: center;
   &--video {
     opacity: 0;
-    animation: rotate .8s;
+    animation: rotate 1.5s;
     animation-fill-mode: forwards;
   }
 }
@@ -60,25 +60,25 @@
 
 @-webkit-keyframes blink {
   0% { opacity: 0.4; filter: blur(0px); }
-  50% { opacity: 1; filter: blur(6px); }
+  50% { opacity: 1; filter: blur(2px); }
   100% { opacity: 0.4; filter: blur(0px); }
 }
 
 @keyframes blink {
   0% { opacity: 0.4; filter: blur(0px); }
-  50% { opacity: 1; filter: blur(6px); }
+  50% { opacity: 1; filter: blur(2px); }
   100% { opacity: 0.4; filter: blur(0px); }
 }
 
 @keyframes rotate {
   from {
-    transform: scale(.1) rotate(40deg);
+    transform: scale(.1) rotate(40deg); filter: blur(10px);
   }
   50% {
-    transform: rotate(-10deg);
+    transform: rotate(-10deg); filter: blur(6px)
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1); filter: blur(0px)
   }
 }
