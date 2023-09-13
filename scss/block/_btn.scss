@@ -22,15 +22,15 @@
 }
 
 .btn_type_first {
-  background: #FF5500;
+  background: $red;
 }
 
 .btn_type_second {
   background: #fff;
-  color: #FF5500;
-  border: 2px solid #FF5500;
+  color: $red;
+  border: 2px solid $red;
   &:hover {
-    background: #FF3D00;
+    background: $red;
     color: #fff;
   }
 }

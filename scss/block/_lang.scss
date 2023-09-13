@@ -2,9 +2,9 @@
   cursor: pointer;
   transition: color .2s linear;
   &--active {
-    color: #FF3D00;
+    color: $red;
   }
   &:hover {
-    color: #FF3D00;
+    color: $red;
   }
 }

@@ -3,6 +3,6 @@
 }
 
 .control__input:checked ~ .control__tag {
-  background: #FF5500;
+  background: $red;
   color: #fff;
 }

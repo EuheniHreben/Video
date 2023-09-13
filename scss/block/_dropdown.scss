@@ -3,7 +3,7 @@
   text-align: right;
   cursor: pointer;
   &:hover {
-    color: #FF3D00;
+    color: $red;
     & .dropdown__menu {
       opacity: 1;
       right: 0;
