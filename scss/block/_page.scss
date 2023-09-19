@@ -3,12 +3,15 @@
   text-align: center;
   justify-content: center;
   padding-top: rem(40px);
+
   &--dark {
     color: #fff;
   }
+
   &--light {
     color: #000;
   }
+
   @include phones {
     flex-direction: column;
     align-items: center;
@@ -19,6 +22,7 @@
   line-height: rem(32px);
   margin-right: rem(32px);
   font-weight: bold;
+
   @include phones {
     margin-right: 0px;
     margin-bottom: 10px;
@@ -38,15 +42,18 @@
   border-radius: 50%;
   display: block;
   cursor: pointer;
+
   &:hover {
     background: rgba(255, 85, 0, 1);
     box-shadow: 0 0 20px 0 #ff3c00c9;
     transition: background .2s linear;
     transition: box-shadow .1s linear;
   }
+
   &--active {
     background-color: rgba(255, 85, 0, 1);
   }
+
   @include phones {
     margin-right: rem(8px);
   }

@@ -2,8 +2,10 @@
   position: relative;
   text-align: right;
   cursor: pointer;
+
   &:hover {
     color: $red;
+
     & .dropdown__menu {
       opacity: 1;
       right: 0;
@@ -31,6 +33,7 @@
   opacity: 0;
   right: -9999px;
   transition: opacity .4s linear;
+
   &::before {
     content: "";
     display: block;
@@ -52,13 +55,13 @@
   border: 20px solid transparent;
   width: 0;
   height: 0;
-  border-color: transparent transparent #EDEDED transparent;  
+  border-color: transparent transparent #EDEDED transparent;
 }
 
 .dropdown__list {
-font-size: rem(13px);
+  font-size: rem(13px);
 }
 
 .dropdown__item--title {
-font-weight: bold;
+  font-weight: bold;
 }

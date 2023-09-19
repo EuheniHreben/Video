@@ -15,15 +15,19 @@
 .menu__item {
   margin-right: rem(54px);
   transition: color .2s linear;
+
   &:last-child {
     margin-right: 0px;
   }
+
   &--active .menu__link {
     color: $red;
   }
+
   &:hover {
     color: $red;
   }
+
   @include phones {
     margin-right: rem(20px);
   }

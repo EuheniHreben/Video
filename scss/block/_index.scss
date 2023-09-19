@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &--video {
     opacity: 0;
     animation: rotate 1.5s;
@@ -50,7 +51,7 @@
 }
 
 :root {
-  --animation-time: 4s; 
+  --animation-time: 4s;
 }
 
 #blink {
@@ -59,26 +60,53 @@
 }
 
 @-webkit-keyframes blink {
-  0% { opacity: 0.4; filter: blur(0px); }
-  50% { opacity: 1; filter: blur(2px); }
-  100% { opacity: 0.4; filter: blur(0px); }
+  0% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
 }
 
 @keyframes blink {
-  0% { opacity: 0.4; filter: blur(0px); }
-  50% { opacity: 1; filter: blur(2px); }
-  100% { opacity: 0.4; filter: blur(0px); }
+  0% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
 }
 
 @keyframes rotate {
   from {
-    transform: scale(.1) rotate(40deg); filter: blur(10px);
+    transform: scale(.1) rotate(40deg);
+    filter: blur(10px);
   }
+
   50% {
-    transform: rotate(-10deg); filter: blur(6px)
+    transform: rotate(-10deg);
+    filter: blur(6px)
   }
+
   to {
     opacity: 1;
-    transform: scale(1); filter: blur(0px)
+    transform: scale(1);
+    filter: blur(0px)
   }
 }

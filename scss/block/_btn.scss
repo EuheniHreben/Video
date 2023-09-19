@@ -16,6 +16,7 @@
   transition: color .2s linear;
   transition: box-shadow .2s linear;
   transition: transform .1s linear;
+
   &:active {
     transform: translateY(4px);
   }
@@ -29,6 +30,7 @@
   background: #fff;
   color: $red;
   border: 2px solid $red;
+
   &:hover {
     background: $red;
     color: #fff;

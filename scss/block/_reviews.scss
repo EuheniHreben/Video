@@ -9,6 +9,7 @@
   column-count: 2;
   column-width: 2rem;
   margin-bottom: rem(50px);
+
   @include phones {
     column-count: 1;
     width: 100%;

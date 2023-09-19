@@ -2,7 +2,7 @@
   appearance: none;
 }
 
-.control__input:checked ~ .control__tag {
+.control__input:checked~.control__tag {
   background: $red;
   color: #fff;
 }

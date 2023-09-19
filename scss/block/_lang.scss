@@ -1,9 +1,11 @@
 .lang__item {
   cursor: pointer;
   transition: color .2s linear;
+
   &--active {
     color: $red;
   }
+
   &:hover {
     color: $red;
   }

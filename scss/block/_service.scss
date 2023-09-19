@@ -12,6 +12,7 @@
   transition: box-shadow .3s;
   color: #666;
   overflow: hidden;
+
   @include phones {
     min-width: 80%;
   }

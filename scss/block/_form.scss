@@ -17,11 +17,13 @@
 
 .form__group {
   display: flex;
+
   &--phones {
     @include phones {
       flex-direction: column;
     }
   }
+
   &--tags {
     @include phones {
       justify-content: space-around;
@@ -37,16 +39,20 @@
   padding: rem(20px) rem(30px);
   border: 1px solid transparent;
   border-radius: 5px;
+
   &:last-child {
     margin-right: 0px;
   }
+
   &:focus {
     border-color: #cccccc;
   }
+
   &--textarea {
     resize: none;
     height: rem(235px);
   }
+
   @include phones {
     margin-right: rem(0px);
   }
@@ -54,6 +60,7 @@
 
 .form__services {
   width: 40%;
+
   @include phones {
     width: 40%;
   }
@@ -64,6 +71,7 @@
   flex-wrap: wrap;
   margin-bottom: rem(30px);
   padding-left: rem(10px);
+
   @include phones {
     width: min-content;
     min-width: 50%;
@@ -75,6 +83,7 @@
 .form__item {
   padding-left: rem(20px);
   padding-bottom: rem(10px);
+
   @include phones {
     padding-left: 0px;
   }
@@ -84,6 +93,7 @@
   display: flex;
   justify-content: end;
   gap: 10px;
+
   @include phones {
     justify-content: space-around;
   }

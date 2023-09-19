@@ -6,8 +6,9 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
   @include phones {
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
   }
 }
