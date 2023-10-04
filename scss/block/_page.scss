@@ -46,8 +46,6 @@
   &:hover {
     background: rgba(255, 85, 0, 1);
     box-shadow: 0 0 20px 0 #ff3c00c9;
-    transition: background .2s linear;
-    transition: box-shadow .1s linear;
   }
 
   &--active {

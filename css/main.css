@@ -961,13 +961,7 @@ template {
   .page__item:hover {
     background: #ff5500;
     -webkit-box-shadow: 0 0 20px 0 #ff3c00c9;
-            box-shadow: 0 0 20px 0 #ff3c00c9;
-    -webkit-transition: background .2s linear;
-    transition: background .2s linear;
-    -webkit-transition: -webkit-box-shadow .1s linear;
-    transition: -webkit-box-shadow .1s linear;
-    transition: box-shadow .1s linear;
-    transition: box-shadow .1s linear, -webkit-box-shadow .1s linear; }
+            box-shadow: 0 0 20px 0 #ff3c00c9; }
   .page__item--active {
     background-color: #ff5500; }
   @media (max-width: 480px) {
