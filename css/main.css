@@ -1081,18 +1081,10 @@ template {
   font-weight: bold;
   color: #2E77A4;
   white-space: nowrap;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-right: 20px; }
   .review__name:hover {
     text-decoration: underline; }
-  .review__name::after {
-    content: "";
-    display: inline-block;
-    background: url(../img/socials/vk-blue.png) no-repeat;
-    width: 1.875rem;
-    height: 1.875rem;
-    margin-left: 0.375rem;
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px); }
   @media (max-width: 480px) {
     .review__name {
       font-size: 1rem; } }
@@ -1292,10 +1284,10 @@ template {
 .partner__item {
   margin-right: 3.75rem;
   margin-bottom: 3.75rem;
-  -webkit-transition: -webkit-filter .5s linear;
-  transition: -webkit-filter .5s linear;
-  transition: filter .5s linear;
-  transition: filter .5s linear, -webkit-filter .5s linear;
+  -webkit-transition: -webkit-filter .2s linear;
+  transition: -webkit-filter .2s linear;
+  transition: filter .2s linear;
+  transition: filter .2s linear, -webkit-filter .2s linear;
   -webkit-filter: grayscale(1);
           filter: grayscale(1); }
   .partner__item:hover {

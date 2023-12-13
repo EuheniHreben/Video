@@ -29,19 +29,10 @@
   color: #2E77A4;
   white-space: nowrap;
   margin-bottom: 10px;
+  margin-right: 20px;
 
   &:hover {
     text-decoration: underline;
-  }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    background: url(../img/socials/vk-blue.png) no-repeat;
-    width: rem(30px);
-    height: rem(30px);
-    margin-left: rem(6px);
-    transform: translateY(8px);
   }
 
   @include phones {
