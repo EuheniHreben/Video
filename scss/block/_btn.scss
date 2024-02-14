@@ -12,10 +12,7 @@
   cursor: pointer;
   outline: none;
   overflow: hidden;
-  transition: background .2s linear;
-  transition: color .2s linear;
-  transition: box-shadow .2s linear;
-  transition: transform .1s linear;
+  transition: all .2s linear;
 
   &:active {
     transform: translateY(4px);
@@ -24,13 +21,16 @@
 
 .btn_type_first {
   background: $red;
+  &:hover {
+    box-shadow: 0 0 20px 0 #ee3e37;
+  }
 }
 
 .btn_type_second {
   background: #fff;
   color: $red;
   border: 2px solid $red;
-
+  
   &:hover {
     background: $red;
     color: #fff;
@@ -39,4 +39,7 @@
 
 .btn_type_third {
   background: #8E8E8E;
+  &:hover {
+    box-shadow: 0 0 20px 0 #5a5959;
+  }
 }
