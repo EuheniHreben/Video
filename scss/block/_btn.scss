@@ -21,7 +21,10 @@
 
 .btn_type_first {
   background: $red;
-  &:hover {
+}
+
+@media (any-hover: hover) {
+  .btn_type_first:hover {
     box-shadow: 0 0 20px 0 #ee3e37;
   }
 }
@@ -39,7 +42,10 @@
 
 .btn_type_third {
   background: #8E8E8E;
-  &:hover {
-    box-shadow: 0 0 20px 0 #5a5959;
+}
+
+@media (any-hover: hover) {
+  .btn_type_third:hover {
+    box-shadow: 0 0 20px 0 #ee3e37;
   }
 }

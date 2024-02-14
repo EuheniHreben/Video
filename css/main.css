@@ -1401,10 +1401,11 @@ template {
 
 .btn_type_first {
   background: #FF5500; }
+
+@media (any-hover: hover) {
   .btn_type_first:hover {
     -webkit-box-shadow: 0 0 20px 0 #ee3e37;
-            box-shadow: 0 0 20px 0 #ee3e37; }
-
+            box-shadow: 0 0 20px 0 #ee3e37; } }
 .btn_type_second {
   background: #fff;
   color: #FF5500;
@@ -1415,10 +1416,11 @@ template {
 
 .btn_type_third {
   background: #8E8E8E; }
-  .btn_type_third:hover {
-    -webkit-box-shadow: 0 0 20px 0 #5a5959;
-            box-shadow: 0 0 20px 0 #5a5959; }
 
+@media (any-hover: hover) {
+  .btn_type_third:hover {
+    -webkit-box-shadow: 0 0 20px 0 #ee3e37;
+            box-shadow: 0 0 20px 0 #ee3e37; } }
 .control__input {
   -webkit-appearance: none;
      -moz-appearance: none;
