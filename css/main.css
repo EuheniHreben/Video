@@ -1436,8 +1436,8 @@ template {
 
 @media (any-hover: hover) {
   .btn_type_third:hover {
-    -webkit-box-shadow: 0 0 20px 0 #ee3e37;
-            box-shadow: 0 0 20px 0 #ee3e37; } }
+    -webkit-box-shadow: 0 0 20px 0 #5a5959;
+            box-shadow: 0 0 20px 0 #5a5959; } }
 .control__input {
   -webkit-appearance: none;
      -moz-appearance: none;
