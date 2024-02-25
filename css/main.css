@@ -490,8 +490,8 @@ template {
   font-size: 0.8125rem;
   text-decoration: underline;
   margin-bottom: 10px;
-  -webkit-transition: color 0.4s linear;
-  transition: color 0.4s linear; }
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
 
 .dropdown__menu {
   position: absolute;
@@ -1419,22 +1419,23 @@ template {
 .btn_type_first {
   background: #FF5500; }
 
-@media (any-hover: hover) {
-  .btn_type_first:hover {
-    -webkit-box-shadow: 0 0 20px 0 #ee3e37;
-            box-shadow: 0 0 20px 0 #ee3e37; } }
 .btn_type_second {
   background: #fff;
   color: #FF5500;
   border: 2px solid #FF5500; }
-  .btn_type_second:hover {
-    background: #FF5500;
-    color: #fff; }
 
 .btn_type_third {
   background: #8E8E8E; }
 
 @media (any-hover: hover) {
+  .btn_type_first:hover {
+    -webkit-box-shadow: 0 0 20px 0 #ee3e37;
+            box-shadow: 0 0 20px 0 #ee3e37; }
+
+  .btn_type_second:hover {
+    background: #FF5500;
+    color: #fff; }
+
   .btn_type_third:hover {
     -webkit-box-shadow: 0 0 20px 0 #5a5959;
             box-shadow: 0 0 20px 0 #5a5959; } }
