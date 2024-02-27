@@ -6,8 +6,9 @@
   border-radius: 15px;
   padding: rem(50px) rem(30px);
   background-color: #F4F5F5;
-  transition: box-shadow .3s linear;
+  transition: box-shadow .2s linear;
   cursor: pointer;
+  max-width: 460px;
 
   &:hover {
     box-shadow: 2px rem(10px) rem(25px) rgb(62, 58, 58 / .6);

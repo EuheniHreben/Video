@@ -208,12 +208,12 @@
           <h2>Оставьте отзыв</h2>
           <form class="form__form">
             <div class="form__group form__group--phones">
-              <input type="text" name="name" class="form__input" placeholder="Ваше имя">
-              <input type="text" name="link" class="form__input" placeholder="Ссылка на профиль VK">
+              <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+              <input type="text" name="link" class="form__input" placeholder="Ссылка на профиль VK" required>
             </div>
             <div class="form__group">
               <textarea name="textarea" class="form__input form__input--textarea"
-                placeholder="Напишите свой честный отзыв;)"></textarea>
+                placeholder="Напишите свой честный отзыв;)" required></textarea>
             </div>
             <div class="form__group form__group--tags">
               <p class="form__services">Какими услугами компании пользуетесь?</p>
@@ -264,7 +264,18 @@
             </div>
             <div class="form__btn">
               <button type="reset" class="btn btn_type_third">Очистить</button>
-              <button type="submit" class="btn btn_type_first">Отправить</button>
+              <button type="button" class="btn btn_type_first" id="myBtn">Отправить</button>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Успешно!</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p>Ваш отзыв отправлен.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -297,6 +308,8 @@
         </address>
       </div>
     </footer>
+
+    <script src="js/modal.js"></script>
 
   </div>
 </body>

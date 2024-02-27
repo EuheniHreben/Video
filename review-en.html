@@ -260,7 +260,18 @@
             </div>
             <div class="form__btn">
               <button type="reset" class="btn btn_type_third">Clear</button>
-              <button type="submit" class="btn btn_type_first">Send</button>
+              <button type="button" class="btn btn_type_first" id="myBtn">Send</button>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Success!</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p>Your review has been sent.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -293,6 +304,8 @@
         </address>
       </div>
     </footer>
+
+    <script src="js/modal.js"></script>
 
   </div>
 </body>
