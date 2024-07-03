@@ -35,13 +35,13 @@
 
 @media (any-hover: hover) {
   .btn_type_first:hover {
-    box-shadow: 0 0 20px 0 #ee3e37;
+    box-shadow: 0 0 12px 0 #ee3e37;
   }
   .btn_type_second:hover {
     background: $red;
     color: #fff;
   }
   .btn_type_third:hover {
-    box-shadow: 0 0 20px 0 #5a5959;
+    box-shadow: 0 0 12px 0 #5a5959;
   }
 }
