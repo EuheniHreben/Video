@@ -5,6 +5,11 @@
   padding-bottom: rem(8px);
 }
 
+.breadcrumbs__item {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .breadcrumbs__link {
   text-decoration: underline;
 }
@@ -15,4 +20,5 @@
 
 .breadcrumbs__separator {
   display: inline-flex;
+  margin: 0 4px;
 }

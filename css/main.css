@@ -737,6 +737,14 @@ template {
   font-size: 0.875rem;
   padding-bottom: 0.5rem; }
 
+.breadcrumbs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
 .breadcrumbs__link {
   text-decoration: underline; }
 
@@ -746,7 +754,8 @@ template {
 .breadcrumbs__separator {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  margin: 0 4px; }
 
 .catalog {
   background-color: #fff;
@@ -1190,7 +1199,7 @@ template {
   padding-bottom: 5rem;
   color: #000; }
 
-.form h2 {
+.form__title {
   margin-bottom: 20px; }
 
 @media (max-width: 480px) {
@@ -1497,7 +1506,9 @@ template {
   color: white;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease; }
 
 .close:hover,
 .close:focus {
@@ -1506,12 +1517,17 @@ template {
   cursor: pointer; }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white; }
+  padding: 12px 16px;
+  background-color: #FF5500;
+  color: white;
+  text-align: center; }
+
+.modal__title h2 {
+  margin: 0; }
 
 .modal-body {
-  padding: 2px 16px; }
+  padding: 22px 16px;
+  text-align: center; }
 
 .modal-footer {
   padding: 2px 16px;
