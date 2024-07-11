@@ -1,11 +1,11 @@
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: rem(40px);
-  margin-bottom: rem(45px);
-  align-items: center;
   position: relative;
-
+  justify-content: space-between;
+  align-items: center;
+  padding-top: rem(40px);
+  margin-bottom: rem(45px); 
+  
   &::before {
     content: "";
     width: 100%;

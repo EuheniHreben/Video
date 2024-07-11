@@ -1,8 +1,8 @@
 // components
+@import '_normalize';
 @import '_variables';
 @import '_adaptive';
 @import '_layout';
-@import '_normalize';
 
 // blocks
 // header
@@ -12,11 +12,10 @@
 @import 'block/_address';
 @import 'block/_dropdown';
 @import 'block/_lang';
-@import 'block/_top-line.scss';
 
 //main
 @import 'block/_index';
-@import 'block/_hero-section';
+@import 'block/_hero';
 @import 'block/_breadcrumbs';
 @import 'block/_catalog';
 @import 'block/_services';

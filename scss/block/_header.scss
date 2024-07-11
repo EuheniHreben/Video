@@ -1,11 +1,27 @@
-.header {
-  margin-bottom: rem(120px);
+.header-main {
   padding-top: rem(28px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  padding-bottom: rem(120px);
+  
   @include phones {
     margin-bottom: rem(80px);
   }
+}
+
+.header--wrapper {
+  background: url(../img/top-line.png) center center / cover no-repeat;
+}
+
+.header-pb {
+  padding-top: rem(28px);
+  padding-bottom: rem(120px);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  margin-bottom: rem(80px);
 }
