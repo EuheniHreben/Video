@@ -5,6 +5,11 @@
   color: #000;
 }
 
+body.dark .form {
+  background: #888;
+  color: #fff;
+}
+
 .form__title {
   margin-bottom: 20px;
 }

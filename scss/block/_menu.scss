@@ -13,7 +13,7 @@
 }
 
 .menu__item {
-  margin-right: rem(54px);
+  margin-right: calc(10px + 40 * (100vw / 1280));
   transition: color .2s linear;
 
   &:last-child {

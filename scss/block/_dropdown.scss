@@ -48,6 +48,12 @@
   }
 }
 
+
+body.dark .dropdown__menu {
+  background: #888;
+  color: #fff;
+}
+
 .dropdown__triangle {
   display: block;
   left: 60%;
@@ -58,6 +64,12 @@
   width: 0;
   height: 0;
   border-color: transparent transparent #EDEDED transparent;
+}
+
+
+body.dark .dropdown__triangle {
+  border-color: transparent transparent #888 transparent;
+  color: #fff;
 }
 
 .dropdown__list {

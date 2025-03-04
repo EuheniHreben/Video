@@ -20,13 +20,20 @@
 }
 
 .about__item:nth-child(2) {
-  background-color: #fff;
+  background: #fff;
+  color: #000;
   border-radius: 5px;
   margin-left: -10%;
   margin-top: 14%;
   max-height: rem(600px);
   max-width: rem(700px);
   overflow: hidden;
+}
+
+
+body.dark .about__item:nth-child(2) {
+  color: #fff;
+  background: #888;
 }
 
 .about__img {
@@ -38,7 +45,6 @@
   left: 0;
   top: 0;
   padding: rem(50px);
-  color: #000;
 
   @include phones {
     padding: rem(20px);

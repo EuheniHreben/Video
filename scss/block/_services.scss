@@ -1,18 +1,15 @@
 .services {
-  margin-bottom: rem(140px);
+  margin-bottom: calc(60px + 80 * (100vw / 1280));
 }
 
 .services__list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-
+  gap: calc(10px + 30 * (100vw / 1280));
+  
   @include phones {
     justify-content: center;
     align-items: center;
   }
-}
-
-.services__item {
-  margin: 20px 10px;
 }

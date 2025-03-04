@@ -1,6 +1,6 @@
 .partners {
   display: flex;
-  background-color: #F4F5F5;
+  background: #F4F5F5;
   padding-top: rem(80px);
   color: #000;
   padding-bottom: rem(80px);
@@ -9,10 +9,16 @@
   @include phones {
     display: none;
   }
+}
 
-  & h2 {
-    margin-bottom: 20px;
-  }
+body.dark .partners {
+  background: #888;
+  color: #fff;
+}
+
+.partner__title {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .partner__list {
