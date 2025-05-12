@@ -1,5 +1,9 @@
-.menu {
-  font-size: rem(14px);
+.menu__list {
+  display: flex;
+  gap: 40px;
+  @include phones {
+    gap: 20px;
+  }
 }
 
 .footer .menu__list {
@@ -8,17 +12,8 @@
   }
 }
 
-.menu__list {
-  display: flex;
-}
-
 .menu__item {
-  margin-right: calc(10px + 40 * (100vw / 1280));
   transition: color .2s linear;
-
-  &:last-child {
-    margin-right: 0px;
-  }
 
   &--active .menu__link {
     color: $red;
@@ -26,9 +21,5 @@
 
   &:hover {
     color: $red;
-  }
-
-  @include phones {
-    margin-right: rem(20px);
   }
 }

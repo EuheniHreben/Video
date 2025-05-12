@@ -1,300 +1,314 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Видео | Услуги</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Видео | Услуги</title>
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--wrapper">
+        <div class="container header-container header-pb">
+          <a href="index.html" class="logo">
+            <img src="./img/logo.png" alt="" class="logo__img" id="blink" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="main-ru.html" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a href="service-ru.html" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="review-ru.html" class="menu__link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="btn-toggle">Theme</a>
+          <address class="address">
+            <a href="tel:+88007003030" class="address__phone"
+              >8 800 700 30 30</a
+            >
+            <div class="dropdown">
+              <a href="#" class="dropdown__link">График работы</a>
+              <div class="dropdown__menu">
+                <div class="dropdown__triangle"></div>
+                <ul class="dropdown__list">
+                  <li class="dropdown__item dropdown__item--title">
+                    пн-вс: 09:00 - 20:00
+                  </li>
+                  <li class="dropdown__item">Обед: 14:00 - 14:30</li>
+                </ul>
+              </div>
+            </div>
+          </address>
+        </div>
+        <div class="container header__bottom">
+          <h1 class="header__title">Услуги</h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="main-ru.html" class="breadcrumbs__link">Главная</a>
+                <div class="breadcrumbs__separator">/</div>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="service-ru.html" class="breadcrumbs__link">Услуги</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-<body>
-  <div class="wrapper">
-
-    <header class="header header--wrapper">
-      <div class="container header-container header-pb">
-        <a href="index.html" class="logo">
-          <img src="./img/logo.png" alt="" class="logo__img">
-        </a>
-        <a href="#" class="btn-toggle">Theme</a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="main-ru.html" class="menu__link">Главная</a></li>
-            <li class="menu__item menu__item--active"><a href="service-ru.html" class="menu__link">Услуги</a></li>
-            <li class="menu__item"><a href="review-ru.html" class="menu__link">Отзывы</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <a href="tel:+88007003030" class="address__phone">8 800 700 30 30</a>
-          <div class="dropdown">
-            <a href="#" class="dropdown__link">График работы</a>
-            <div class="dropdown__menu">
-              <div class="dropdown__triangle"></div>
-              <ul class="dropdown__list">
-                <li class="dropdown__item dropdown__item--title">пн-вс: 09:00 - 20:00</li>
-                <li class="dropdown__item">Обед: 14:00 - 14:30</li>
+      <main class="main">
+        <section class="catalog">
+          <div class="container">
+            <ul class="catalog__list">
+              <il class="catalog__item card">
+                <div class="card__img-box">
+                  <img src="./img/girls.png" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h2>Съемки клипа</h2>
+                  <div class="card__desc">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ratione sunt quidem officiis illum atque facere quaerat
+                      vel nam! Mollitia dolores at repellat qui sapiente
+                      voluptate repellendus corrupti, eos voluptatum asperiores.
+                    </p>
+                  </div>
+                  <div class="card__btn">
+                    <a href="review-ru.html" class="btn btn_type_first"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </il>
+              <hr />
+              <il class="catalog__item card">
+                <div class="card__img-box">
+                  <img src="./img/engineer.png" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h2>Съемка мероприятий</h2>
+                  <div class="card__desc">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ratione sunt quidem officiis illum atque facere quaerat
+                      vel nam! Mollitia dolores at repellat qui sapiente
+                      voluptate repellendus corrupti, eos voluptatum asperiores.
+                    </p>
+                  </div>
+                  <div class="card__btn">
+                    <a href="review-ru.html" class="btn btn_type_first"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </il>
+              <hr />
+              <il class="catalog__item card">
+                <div class="card__img-box">
+                  <img src="./img/3.8.jpg" alt="" class="card__img" />
+                </div>
+                <div class="card__info">
+                  <h2>Съемка рекламы</h2>
+                  <div class="card__desc">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ratione sunt quidem officiis illum atque facere quaerat
+                      vel nam! Mollitia dolores at repellat qui sapiente
+                      voluptate repellendus corrupti, eos voluptatum asperiores.
+                    </p>
+                  </div>
+                  <div class="card__btn">
+                    <a href="review-ru.html" class="btn btn_type_first"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+              </il>
+            </ul>
+            <div class="catalog__box"></div>
+            <div class="page page--light">
+              <div class="page__current">Страница 1 из 7</div>
+              <ul class="page__list">
+                <li class="page__item page__item--active">
+                  <a href="" class="page__link">1</a>
+                </li>
+                <li class="page__item">
+                  <a href="" class="page__link">2</a>
+                </li>
+                <li class="page__item">
+                  <a href="" class="page__link">3</a>
+                </li>
+                <li class="page__item">
+                  <a href="" class="page__link">4</a>
+                </li>
+                <li class="page__item">
+                  <a href="" class="page__link">5</a>
+                </li>
+                <li class="page__item">
+                  <a href="" class="page__link">6</a>
+                </li>
+                <li class="page__item">
+                  <a href="" class="page__link">7</a>
+                </li>
               </ul>
             </div>
           </div>
-        </address>
-        <div class="lang">
-          <ul class="lang__list">
-            <li class="lang__item lang__item--active"><a href="service-ru.html" class="lang__link">RU</a></li>
-            <li class="lang__item"><a href="service-en.html" class="lang__link">EN</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container header__bottom">
-        <h1 class="header__title">Услуги</h1>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="main-ru.html" class="breadcrumbs__link">Главная</a>
-              <div class="breadcrumbs__separator">/</div>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="service-ru.html" class="breadcrumbs__link">Услуги</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <section class="catalog">
-        <div class="container">
-          <ul class="catalog__list">
-            <il class="catalog__item">
-              <div class="catalog__img-box">
-                <img src="./img/girls.png" alt="" class="catalog__img">
-              </div>
-              <div class="catalog__info">
-                <h2>Съемки клипа</h2>
-                <div class="catalog__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt quidem
-                    officiis illum atque facere quaerat vel nam! Mollitia dolores at repellat qui sapiente voluptate
-                    repellendus corrupti, eos voluptatum asperiores.
-                  </p>
-                </div>
-                <div class="catalog__btn"><a href="review-ru.html" class="btn btn_type_first">Подробнее</a></div>
-              </div>
-            </il>
-            <hr>  
-            <il class="catalog__item">
-              <div class="catalog__img-box">
-                <img src="./img/engineer.png" alt="" class="catalog__img">
-              </div>
-              <div class="catalog__info">
-                <h2>Съемка мероприятий</h2>
-                <div class="catalog__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt quidem
-                    officiis illum atque facere quaerat vel nam! Mollitia dolores at repellat qui sapiente voluptate
-                    repellendus corrupti, eos voluptatum asperiores.
-                  </p>
-                </div>
-                <div class="catalog__btn"><a href="review-ru.html" class="btn btn_type_first">Подробнее</a></div>
-              </div>
-            </il>
-            <hr>
-            <il class="catalog__item">
-              <div class="catalog__img-box">
-                <img src="./img/3.8.jpg" alt="" class="catalog__img">
-              </div>
-              <div class="catalog__info">
-                <h2>Съемка рекламы</h2>
-                <div class="catalog__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt quidem
-                    officiis illum atque facere quaerat vel nam! Mollitia dolores at repellat qui sapiente voluptate
-                    repellendus corrupti, eos voluptatum asperiores.
-                  </p>
-                </div>
-                <div class="catalog__btn"><a href="review-ru.html" class="btn btn_type_first">Подробнее</a></div>
-              </div>
-            </il>
-            <hr>
-            <il class="catalog__item">
-              <div class="catalog__img-box">
-                <img src="./img/girls.png" alt="" class="catalog__img">
-              </div>
-              <div class="catalog__info">
-                <h2>Съемки клипа</h2>
-                <div class="catalog__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt quidem
-                    officiis illum atque facere quaerat vel nam! Mollitia dolores at repellat qui sapiente voluptate
-                    repellendus corrupti, eos voluptatum asperiores.
-                  </p>
-                </div>
-                <div class="catalog__btn"><a href="review-ru.html" class="btn btn_type_first">Подробнее</a></div>
-              </div>
-            </il>
-            <hr>  
-            <il class="catalog__item">
-              <div class="catalog__img-box">
-                <img src="./img/engineer.png" alt="" class="catalog__img">
-              </div>
-              <div class="catalog__info">
-                <h2>Съемка мероприятий</h2>
-                <div class="catalog__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt quidem
-                    officiis illum atque facere quaerat vel nam! Mollitia dolores at repellat qui sapiente voluptate
-                    repellendus corrupti, eos voluptatum asperiores.
-                  </p>
-                </div>
-                <div class="catalog__btn"><a href="review-ru.html" class="btn btn_type_first">Подробнее</a></div>
-              </div>
-            </il>
-            <hr>
-            <il class="catalog__item">
-              <div class="catalog__img-box">
-                <img src="./img/3.8.jpg" alt="" class="catalog__img">
-              </div>
-              <div class="catalog__info">
-                <h2>Съемка рекламы</h2>
-                <div class="catalog__desc">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sunt quidem
-                    officiis illum atque facere quaerat vel nam! Mollitia dolores at repellat qui sapiente voluptate
-                    repellendus corrupti, eos voluptatum asperiores.
-                  </p>
-                </div>
-                <div class="catalog__btn"><a href="review-ru.html" class="btn btn_type_first">Подробнее</a></div>
-              </div>
-            </il>
-          </ul>
-          <div class="catalog__box">
+        </section>
+        <section class="partners">
+          <div class="container">
+            <h2 class="partner__title">Партеры</h2>
+            <div class="partner">
+              <ul class="partner__list">
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/divico.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/rosvideo.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/ds.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/zavod.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/park.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/pixel.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/zvibes.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="partner__item">
+                  <a href="" class="partner__link">
+                    <div class="partner__img-box">
+                      <img
+                        src="./img/partners/expotv.png"
+                        alt=""
+                        class="partner__img"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="page page--light">
-            <div class="page__current">Страница 1 из 7</div>
-            <ul class="page__list">
-              <li class="page__item page__item--active">
-                <a href="" class="page__link">1</a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-container">
+          <a href="index.html" class="logo">
+            <img src="./img/logo.png" alt="" class="logo__img" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="main-ru.html" class="menu__link">Главная</a>
               </li>
-              <li class="page__item">
-                <a href="" class="page__link">2</a>
+              <li class="menu__item menu__item--active">
+                <a href="service-ru.html" class="menu__link">Услуги</a>
               </li>
-              <li class="page__item">
-                <a href="" class="page__link">3</a>
-              </li>
-              <li class="page__item">
-                <a href="" class="page__link">4</a>
-              </li>
-              <li class="page__item">
-                <a href="" class="page__link">5</a>
-              </li>
-              <li class="page__item">
-                <a href="" class="page__link">6</a>
-              </li>
-              <li class="page__item">
-                <a href="" class="page__link">7</a>
+              <li class="menu__item">
+                <a href="review-ru.html" class="menu__link">Отзывы</a>
               </li>
             </ul>
+          </nav>
+          <div class="social">
+            <a href="https://github.com/" target="_blank"
+              ><i class="fab fa-github fa-xl"></i
+            ></a>
+            <a href="https://t.me/" target="_blank"
+              ><i class="fab fa-telegram fa-xl"></i
+            ></a>
+            <a href="mailto:you@example.com"
+              ><i class="fas fa-envelope fa-xl"></i
+            ></a>
           </div>
+          <address class="address">
+            <div class="address__free">Бесплатный звонок</div>
+            <a href="tel:+88007003030" class="address__phone"
+              >8 800 700 30 30</a
+            >
+          </address>
         </div>
-      </section>
-      <section class="partners">
-        <div class="container">
-          <h2 class="partner__title">Партеры</h2>
-          <div class="partner">
-            <ul class="partner__list">
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/divico.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/rosvideo.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/ds.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/zavod.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/park.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/pixel.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/zvibes.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-              <li class="partner__item">
-                <a href="" class="partner__link">
-                  <div class="partner__img-box">
-                    <img src="./img/partners/expotv.png" alt="" class="partner__img">
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
+      </footer>
 
-    <footer class="footer">
-      <div class="container footer-container">
-        <a href="index.html" class="logo">
-          <img src="./img/logo.png" alt="" class="logo__img">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="main-ru.html" class="menu__link">Главная</a></li>
-            <li class="menu__item menu__item--active"><a href="service-ru.html" class="menu__link">Услуги</a></li>
-            <li class="menu__item"><a href="review-ru.html" class="menu__link">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item social__item--tel"><a href="https://telegram.org" class="social__link"></a></li>
-            <li class="social__item social__item--vk"><a href="https://vk.com" class="social__link"></a></li>
-            <li class="social__item social__item--f"><a href="https://facebook.com" class="social__link"></a></li>
-            <li class="social__item social__item--in"><a href="https://instagram.com" class="social__link"></a></li>
-          </ul>
-        </div>
-        <address class="address">
-          <div class="address__free">Бесплатный звонок</div>
-          <a href="tel:+88007003030" class="address__phone">8 800 700 30 30</a>
-        </address>
-      </div>
-    </footer>
-
-    <script src="js/theme.js"></script>
-
-  </div>
-</body>
-
+      <script src="js/loading.js"></script>
+      <script src="js/theme.js"></script>
+    </div>
+  </body>
 </html>

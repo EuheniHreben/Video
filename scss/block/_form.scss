@@ -1,13 +1,14 @@
 .form {
-  background-color: #F4F5F5;
   padding-top: rem(80px);
   padding-bottom: rem(80px);
-  color: #000;
+  color: #000; 
 }
 
 body.dark .form {
-  background: #888;
-  color: #fff;
+  color: #fff; 
+  & input, textarea {
+    background: #888;
+  }
 }
 
 .form__title {
@@ -44,6 +45,7 @@ body.dark .form {
   padding: rem(20px) rem(30px);
   border: 1px solid transparent;
   border-radius: 5px;
+  background-color: #cccccc;
 
   &:last-child {
     margin-right: 0px;

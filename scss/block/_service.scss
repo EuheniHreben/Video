@@ -1,21 +1,11 @@
 .service {
-  max-width: calc(280px + 40 * (100vw / 1280));
-  width: 100%;
-  min-height: rem(450px);
-  background-color: #fff;
-  border-radius: 10px;
-  // margin: 20px 10px;
-  padding: rem(30px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  transition: box-shadow .3s;
+  background: #fff;
   color: #666;
+  border-radius: 12px;
+  padding: 30px;
   overflow: hidden;
-
-  @include phones {
-    min-width: 60%;
-  }
 }
 
 body.dark .service {
@@ -24,11 +14,11 @@ body.dark .service {
 }
 
 .service__img-box {
-  margin-bottom: rem(30px);
+  margin-bottom: 30px;
 }
 
 .service__title {
-  margin-bottom: rem(20px);
+  margin-bottom: 20px;
   color: #000;
   font-weight: bold;
 }
@@ -37,26 +27,9 @@ body.dark .service__title {
   color: #fff;
 }
 
-.service__list-info {
-  margin-bottom: rem(26px);
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-
-.service__item-info {
-  width: 45%;
-}
-
-.service__item-price {
-  color: #000;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.service__info-desc {
-  font-size: 14px;
-  margin-bottom: rem(20px);
+.service__text {
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .service__btn {

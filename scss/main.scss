@@ -11,15 +11,16 @@
 @import 'block/_menu';
 @import 'block/_address';
 @import 'block/_dropdown';
-@import 'block/_lang';
 
 //main
 @import 'block/_index';
 @import 'block/_hero';
 @import 'block/_breadcrumbs';
 @import 'block/_catalog';
+@import 'block/_card';
 @import 'block/_services';
-@import 'block/_service.scss';
+@import 'block/_service';
+@import 'block/_info';
 @import 'block/_page';
 @import 'block/_about';
 @import 'block/_reviews';
@@ -29,6 +30,7 @@
 @import 'block/_partners';
 @import 'block/_banner';
 @import 'block/_news';
+@import 'block/_news-block';
 @import 'block/_btn';
 @import 'block/_control';
 @import 'block/_modal';

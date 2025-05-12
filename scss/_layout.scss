@@ -1,5 +1,5 @@
 body {
-  font-size: calc(8px + 8 * (100vw / 1280));
+  font-size: $baseFontSize;
   &.locked {
     overflow: hidden;
   }
@@ -9,10 +9,13 @@ html,
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   color: #fff;
+  background: #fff;
   line-height: 1.42;
-  background: rgb(23, 25, 28);
-  height: 100%;
   width: 100%;
+  & .dark {
+    background: rgb(23, 25, 28);
+    color: #fff;
+  }
 }
 
 * {
@@ -23,13 +26,14 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  flex: 1;
   min-height: 100%;
   overflow: hidden;
-  flex: 1;
 }
 
 .wrapper-main {
   background: url(../img/hero.png) center top no-repeat, url(../img/bottom-pic.png) center bottom no-repeat;
+  background-color: rgb(23, 25, 28);
 }
 
 .header {

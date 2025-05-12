@@ -43,37 +43,12 @@
   }
 }
 
-.index__btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
-
 :root {
   --animation-time: 4s;
 }
 
 #blink {
-  -webkit-animation: blink var(--animation-time) linear infinite;
   animation: blink var(--animation-time) linear infinite;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0.4;
-    filter: blur(0px);
-  }
-
-  50% {
-    opacity: 1;
-    filter: blur(2px);
-  }
-
-  100% {
-    opacity: 0.4;
-    filter: blur(0px);
-  }
 }
 
 @keyframes blink {

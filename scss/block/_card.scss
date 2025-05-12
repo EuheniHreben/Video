@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  @include phones {
+    gap: 20px;
+  }
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  @include phones {
+    padding: 0 60px;
+    margin: 0 auto;
+  }
+}
+
+.card__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 40px;
+
+  @include phones {
+    max-width: 350px;
+    border-radius: 20px;
+  }
+}
+
+.card__btn {
+  margin-top: auto;
+
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: calc(20px + 16 * (100vw / 1280));
+
+  @include phones {
+    margin-top: 20px;
+  }
+}
+
+.card p {
+  margin-bottom: 20px;
+}

@@ -1,49 +1,16 @@
-.social__list {
+.social {
   display: flex;
+  gap: 20px;
+  z-index: 1000;
 }
 
-.social__item {
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  margin-right: rem(10px);
-  transition: background .5s;
+.social a {
+  margin: 0 10px;
+  color: #444;
+  font-size: 24px;
+  transition: color 0.3s ease;
 }
 
-.social__link {
-  display: block;
-  height: 36px;
-  width: 36px;
-}
-
-.social__item--tel {
-  background: url(../img/socials/telegram.png);
-
-  &:hover {
-    background: url(../img/socials/t2.png);
-  }
-}
-
-.social__item--vk {
-  background: url(../img/socials/vk.png);
-
-  &:hover {
-    background: url(../img/socials/vk2.png);
-  }
-}
-
-.social__item--f {
-  background: url(../img/socials/f.png);
-
-  &:hover {
-    background: url(../img/socials/f2.png);
-  }
-}
-
-.social__item--in {
-  background: url(../img/socials/in.png);
-
-  &:hover {
-    background: url(../img/socials/in2.png);
-  }
+.social a:hover {
+  color: #007bff;
 }

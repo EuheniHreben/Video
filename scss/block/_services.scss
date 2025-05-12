@@ -1,15 +1,28 @@
 .services {
-  margin-bottom: calc(60px + 80 * (100vw / 1280));
+  margin: 120px 0px;
 }
 
 .services__list {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: calc(10px + 30 * (100vw / 1280));
-  
-  @include phones {
-    justify-content: center;
-    align-items: center;
+  gap: 30px;
+}
+
+.services__item {
+  display: flex;
+  min-width: 300px;
+  flex: 0 1 calc(33% - 20px);
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    .services__item {
+      flex: 0 0 calc((100% - 20px) / 2);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .services__item {
+      flex: 0 0 300px;
+    }
   }
 }

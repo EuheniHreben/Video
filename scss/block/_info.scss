@@ -1,0 +1,13 @@
+
+.info {
+  display: flex;
+  margin-bottom: rem(26px);
+  font-size: 16px;
+}
+
+.info__price {
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+}
+

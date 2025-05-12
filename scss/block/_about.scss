@@ -6,16 +6,16 @@
   }
 }
 
-.about__list {
+.about__row {
   display: flex;
   justify-content: center;
 }
 
 .about__item {
-  width: 50%;
+  flex: 0 1 50%;
 
   @include phones {
-    font-size: rem(12px);
+    font-size: 12px;
   }
 }
 
@@ -47,7 +47,7 @@ body.dark .about__item:nth-child(2) {
   padding: rem(50px);
 
   @include phones {
-    padding: rem(20px);
+    padding: 20px;
   }
 }
 

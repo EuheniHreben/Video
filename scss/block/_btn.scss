@@ -1,8 +1,8 @@
 .btn {
   display: inline-flex;
-  padding: calc(8px + 8 * (100vw / 1280)) calc(16px + 20 * (100vw / 1280));
+  padding: calc(12px + 6 * (100vw / 1280)) calc(16px + 20 * (100vw / 1280));
   color: #fff;
-  font-size: calc(6px + 8 * (100vw / 1280));
+  font-size: calc(10px + 4 * (100vw / 1280));
   font-weight: bold;
   border-radius: 36px;
   text-transform: uppercase;
@@ -12,18 +12,23 @@
   cursor: pointer;
   outline: none;
   overflow: hidden;
-  transition: all .1s linear;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   &:active {
-    transform: translateY(4px);
+    transform: translateY(2px);
   }
 }
 
 .btn_type_first {
   background: $red;
+  &:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: #e04d00; 
+  }
 }
 
 .btn_type_second {
-  background: #fff;
+  background: transparent;
   color: $red;
   border: 2px solid $red;
 }
@@ -40,6 +45,9 @@
   .btn_type_second:hover {
     background: $red;
     color: #fff;
+  }
+  body.dark .btn_type_second:hover {
+    background: $red;
   }
   .btn_type_third:hover {
     box-shadow: 0 0 12px 0 #5a5959;
@@ -90,6 +98,6 @@
     }
   }
   &:active {
-    transform: translateY(4px);
+    transform: translateY(2px);
   }
 }
