@@ -12,8 +12,8 @@
   cursor: pointer;
   outline: none;
   overflow: hidden;
-  transition: all 0.15s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
   &:active {
     transform: translateY(2px);
   }
@@ -23,7 +23,7 @@
   background: $red;
   &:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    background-color: #e04d00; 
+    background-color: #e04d00;
   }
 }
 
@@ -36,7 +36,6 @@
 .btn_type_third {
   background: $gray;
 }
-
 
 @media (any-hover: hover) {
   .btn_type_first:hover {
@@ -58,18 +57,20 @@
   display: inline-flex;
   cursor: pointer;
   padding: 10px 18px;
+  min-width: 100px;
+  justify-content: center;
   border-radius: 36px;
   color: #fff;
   text-transform: uppercase;
-  transition: all .3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   outline: none;
   border: none;
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -80,14 +81,14 @@
     z-index: -2;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 100%;
     background-color: darken($red, 15%);
-    transition: all .3s;
+    transition: all 0.3s;
     border-radius: 20px;
     z-index: -1;
   }

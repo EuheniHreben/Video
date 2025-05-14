@@ -314,11 +314,13 @@ body {
 
 html,
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #fff;
   background: #fff;
   line-height: 1.42;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+  transition: background .3s ease-in-out, color .3s ease-in-out; }
   html .dark,
   body .dark {
     background: #17191c;
@@ -1061,7 +1063,6 @@ body.dark .page {
   border-radius: 5px;
   margin-left: -10%;
   margin-top: 14%;
-  max-height: 37.5rem;
   max-width: 43.75rem;
   overflow: hidden; }
 
@@ -1485,10 +1486,10 @@ body.dark .partners {
   cursor: pointer;
   outline: none;
   overflow: hidden;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   .btn:active {
     -webkit-transform: translateY(2px);
             transform: translateY(2px); }
@@ -1529,19 +1530,23 @@ body.dark .partners {
   display: inline-flex;
   cursor: pointer;
   padding: 10px 18px;
+  min-width: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 36px;
   color: #fff;
   text-transform: uppercase;
-  -webkit-transition: all .3s;
-  transition: all .3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   outline: none;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .btn-toggle:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1551,15 +1556,15 @@ body.dark .partners {
     border-radius: 20px;
     z-index: -2; }
   .btn-toggle:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 100%;
     background-color: #b33c00;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     border-radius: 20px;
     z-index: -1; }
   .btn-toggle:hover {
@@ -1589,7 +1594,6 @@ body.dark .partners {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
   background-color: rgba(0, 0, 0, 0.4); }
 
 .modal-content {
@@ -1602,34 +1606,20 @@ body.dark .partners {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
+          animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s; }
+          animation-duration: 0.4s; }
   @media (max-width: 580px) {
     .modal-content {
-      width: 60%; } }
+      width: 80%; } }
 
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0; }
-  to {
-    top: 0;
-    opacity: 1; } }
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0; }
-  to {
-    top: 0;
-    opacity: 1; } }
 .close {
   color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  -webkit-transition: color .4s ease;
-  transition: color .4s ease; }
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease; }
 
 .close:hover,
 .close:focus {
@@ -1656,6 +1646,21 @@ body.dark .partners {
   background-color: #5cb85c;
   color: white; }
 
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
 .swiper {
   width: 100%;
   height: 500px; }
