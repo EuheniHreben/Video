@@ -1,8 +1,8 @@
 .btn {
   display: inline-flex;
-  padding: calc(12px + 6 * (100vw / 1280)) calc(16px + 20 * (100vw / 1280));
+  padding: 18px 36px;
   color: #fff;
-  font-size: calc(10px + 4 * (100vw / 1280));
+  font-size: 14px;
   font-weight: bold;
   border-radius: 36px;
   text-transform: uppercase;
@@ -12,17 +12,17 @@
   cursor: pointer;
   outline: none;
   overflow: hidden;
+  transform: translateY(0px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in;
   &:active {
-    transform: translateY(2px);
+    transform: translateY(4px);
   }
 }
 
 .btn_type_first {
   background: $red;
   &:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     background-color: #e04d00;
   }
 }
@@ -37,9 +37,9 @@
   background: $gray;
 }
 
-@media (any-hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .btn_type_first:hover {
-    box-shadow: 0 0 12px 0 #ee3e37;
+    box-shadow: 0 0 15px 0 #ee3e37;
   }
   .btn_type_second:hover {
     background: $red;
@@ -49,7 +49,13 @@
     background: $red;
   }
   .btn_type_third:hover {
-    box-shadow: 0 0 12px 0 #5a5959;
+    box-shadow: 0 0 15px 0 #5a5959;
+  }
+  .btn-toggle:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
   }
 }
 
@@ -61,6 +67,7 @@
   justify-content: center;
   border-radius: 36px;
   color: #fff;
+  text-wrap: nowrap;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
@@ -91,12 +98,6 @@
     transition: all 0.3s;
     border-radius: 20px;
     z-index: -1;
-  }
-  &:hover {
-    color: #fff;
-    &:before {
-      width: 100%;
-    }
   }
   &:active {
     transform: translateY(2px);

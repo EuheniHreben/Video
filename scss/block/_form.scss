@@ -7,7 +7,7 @@
 body.dark .form {
   color: #fff; 
   & input, textarea {
-    background: #888;
+    background: #222;
   }
 }
 
@@ -23,16 +23,14 @@ body.dark .form {
 
 .form__group {
   display: flex;
-
   &--phones {
     @include phones {
       flex-direction: column;
     }
   }
-
   &--tags {
     @include phones {
-      justify-content: space-around;
+      display: none;
     }
   }
 }

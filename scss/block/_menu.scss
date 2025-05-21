@@ -1,8 +1,9 @@
 .menu__list {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   @include phones {
-    gap: 20px;
+    gap: 15px;
+    font-size: 14px;
   }
 }
 
@@ -13,12 +14,10 @@
 }
 
 .menu__item {
-  transition: color .2s linear;
-
+  transition: color 0.2s linear;
   &--active .menu__link {
     color: $red;
   }
-
   &:hover {
     color: $red;
   }
