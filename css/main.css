@@ -1140,7 +1140,7 @@ body.dark .about__item:nth-child(2) {
             box-shadow: 4px 10px 15px #3e3a61; }
   @media (max-width: 580px) {
     .review {
-      width: 80%;
+      width: 100%;
       padding: 1.5625rem 1.875rem; } }
 
 body.dark .review {
