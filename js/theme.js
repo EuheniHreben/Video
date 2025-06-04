@@ -2,9 +2,9 @@ const btnTheme = document.querySelector(".btn-toggle");
 
 function updateButtonText() {
   if (document.body.classList.contains("dark")) {
-    btnTheme.textContent = "🌙 Dark";
+    btnTheme.textContent = "Dark";
   } else {
-    btnTheme.textContent = "☀️ Light";
+    btnTheme.textContent = "Light";
   }
 }
 

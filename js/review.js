@@ -3,7 +3,7 @@ const nameValue = document.getElementById("nameValue");
 const themeValue = document.getElementById("titleValue");
 const reviewValue = document.getElementById("descValue");
 let list = document.querySelector(".reviews__list");
-let x = 1;
+let counter = 1;
 
 btnRewiev.addEventListener("click", (event) => {
   event.preventDefault();
@@ -19,7 +19,7 @@ btnRewiev.addEventListener("click", (event) => {
   let tagP = document.createElement("p");
   let dateNow = document.createElement("div");
 
-  item.id = "item" + x;
+  item.id = "item" + counter;
   item.className = "reviews__item review";
   top.className = "review__contact";
   imgBox.className = "review__img-box";
@@ -32,23 +32,23 @@ btnRewiev.addEventListener("click", (event) => {
   dateNow.className = "review__date";
 
   if (!nameValue.value) {
-    name.innerHTML = "Anonimous";
+    name.innerHTML = "Анонимус";
   } else {
     name.innerHTML = nameValue.value;
   }
   if (!titleValue.value) {
-    title.innerHTML = "Title";
+    title.innerHTML = "Лучше, чем борщ от бабушки";
   } else {
     title.innerHTML = titleValue.value;
   }
   if (!descValue.value) {
     tagP.innerHTML =
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum facere, est illum ducimus aut, neque delectus corrupti molestiae maiores nihil ullam error placeat officiis ut ipsam nesciunt voluptatum? Facere.";
+      "Заказал видео, а получил мини-фильм! Даже моя кошка сидела и смотрела, не моргая. Теперь хочу снимать свадьбу кота.";
   } else {
     tagP.innerHTML = descValue.value;
   }
 
-  img.src = "./img/Эллипс.png";
+  img.src = "./img/cameraman.png";
   const currentDate = new Date();
   const options = { year: "numeric", month: "long", day: "numeric" };
   const formattedDate = currentDate.toLocaleDateString("ru-RU", options);
@@ -67,12 +67,13 @@ btnRewiev.addEventListener("click", (event) => {
   bottom.append(dateNow);
 
   window.scrollTo({
-    top: document.getElementById("item" + x).offsetTop,
+    top: document.getElementById("item" + counter).offsetTop - 650,
     behavior: "smooth",
   });
+
+  counter++;
 
   nameValue.value = "";
   titleValue.value = "";
   descValue.value = "";
-  x++;
 });

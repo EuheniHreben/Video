@@ -5,27 +5,22 @@
   align-items: center;
   border-radius: 15px;
   padding: calc(20px + 30 * (100vw / 1280)) calc(10px + 20 * (100vw / 1280));
-  background-color: #F4F5F5;
-  transition: box-shadow .2s linear;
-  width: calc(200px + 260 * (100vw / 1280));
+  background-color: #f4f5f5;
   overflow: hidden;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   cursor: pointer;
-  &:hover {
-    box-shadow: 4px 10px 15px rgb(62, 58, 58 / .6);
-  }
-  
-  @include phones {
-    width: 100%;
-    padding: rem(25px) rem(30px);
-  }
+  transition: box-shadow 0.2s linear;
 }
 
 body.dark .review {
   background: #222;
   color: #fff;
-  &:hover {
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .review:hover {
+    box-shadow: 4px 10px 15px rgb(62, 58, 58 / 0.6);
+  }
+  body.dark .review:hover {
     box-shadow: 2px 1px 15px #fff;
   }
 }
@@ -39,6 +34,7 @@ body.dark .review {
 .review__img {
   max-width: calc(89px + 50 * (100vw / 1280));
   max-height: calc(89px + 50 * (100vw / 1280));
+  border-radius: 50%;
 
   @include phones {
     width: rem(89px);
@@ -66,7 +62,7 @@ body.dark .review {
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
-  
+
   @include phones {
     padding-left: rem(10px);
   }
@@ -80,7 +76,7 @@ body.dark .review {
 .review__title {
   font-size: calc(10px + 16 * (100vw / 1280));
   font-weight: bold;
-  margin-bottom: rem(14px);  
+  margin-bottom: rem(14px);
 
   @include phones {
     font-size: rem(20px);

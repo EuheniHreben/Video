@@ -39,12 +39,7 @@ body.dark .page {
   border-radius: 50%;
   display: block;
   cursor: pointer;
-  transition: all .3s;
-
-  &:hover {
-    background: rgba(255, 85, 0, 1);
-    box-shadow: 0 0 20px 0 #ff3c00c9;
-  }
+  transition: all 0.3s;
 
   &--active {
     background-color: rgba(255, 85, 0, 1);
@@ -52,5 +47,12 @@ body.dark .page {
 
   @include phones {
     margin-right: rem(8px);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .page__item:hover {
+    background: rgba(255, 85, 0, 1);
+    box-shadow: 0 0 10px 0 #ff3c00c9;
   }
 }

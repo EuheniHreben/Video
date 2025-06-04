@@ -1,20 +1,20 @@
 .reviews {
   color: #000;
-  padding-top: rem(60px);
-  padding-bottom: rem(60px);
+  padding: 60px 0;
 }
 
 .reviews__list {
-  gap: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  column-count: 2; 
+  column-gap: 20px;
+}
+
+.reviews__item {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
   .reviews__list {
     column-count: 1;
-    width: 100%;
+    padding: 0 20px;
   }
 }

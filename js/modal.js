@@ -3,7 +3,7 @@ const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
 const body = document.body;
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   body.classList.add("locked");
 };
 span.onclick = function () {
