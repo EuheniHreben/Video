@@ -48,7 +48,7 @@ btnRewiev.addEventListener("click", (event) => {
     tagP.innerHTML = descValue.value;
   }
 
-  img.src = "./img/cameraman.png";
+  img.src = "./img/cameraman.jpg";
   const currentDate = new Date();
   const options = { year: "numeric", month: "long", day: "numeric" };
   const formattedDate = currentDate.toLocaleDateString("ru-RU", options);

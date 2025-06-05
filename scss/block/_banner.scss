@@ -1,8 +1,10 @@
-.banner__link {
+.banner {
   display: flex;
+  justify-content: center;
+  min-width: 100%;
 }
 
 .banner__img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }

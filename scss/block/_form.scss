@@ -1,12 +1,13 @@
 .form {
   padding-top: rem(80px);
   padding-bottom: rem(80px);
-  color: #000; 
+  color: #000;
 }
 
 body.dark .form {
-  color: #fff; 
-  & input, textarea {
+  color: #fff;
+  & input,
+  textarea {
     background: #222;
     color: #fff;
   }
@@ -53,7 +54,7 @@ body.dark .form {
   &:focus {
     border-color: #cccccc;
   }
-  
+
   &--textarea {
     resize: none;
     height: rem(235px);
@@ -66,31 +67,19 @@ body.dark .form {
 
 .form__services {
   width: 40%;
-
-  @include phones {
-    width: 40%;
-  }
 }
 
 .form__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: rem(30px);
-  padding-left: rem(10px);
+  margin-bottom: 30px;
+  padding-left: 10px;
+  gap: 20px;
 
   @include phones {
     width: min-content;
     min-width: 50%;
-    margin-bottom: rem(10px);
-    padding-left: rem(0px);
-  }
-}
-
-.form__item {
-  padding-left: rem(20px);
-  padding-bottom: rem(10px);
-
-  @include phones {
+    margin-bottom: 10px;
     padding-left: 0px;
   }
 }
@@ -98,7 +87,7 @@ body.dark .form {
 .form__btn {
   display: flex;
   justify-content: end;
-  gap: 10px;
+  gap: 20px;
 
   @include phones {
     justify-content: space-around;
