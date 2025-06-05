@@ -1,6 +1,5 @@
 .form {
-  padding-top: rem(80px);
-  padding-bottom: rem(80px);
+  padding: 80px 0;
   color: #000;
 }
 
@@ -57,36 +56,36 @@ body.dark .form {
 
   &--textarea {
     resize: none;
-    height: rem(235px);
+    height: 235px;
   }
 
   @include phones {
-    margin-right: rem(0px);
+    margin-right: 0px;
   }
 }
 
 .form__services {
-  width: 40%;
+  flex: 0 0 40%;
 }
 
 .form__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
-  padding-left: 10px;
+  padding: 10px 0;
   gap: 20px;
 
   @include phones {
     width: min-content;
     min-width: 50%;
     margin-bottom: 10px;
-    padding-left: 0px;
+    padding: 0px;
   }
 }
 
 .form__btn {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 20px;
 
   @include phones {

@@ -9,10 +9,12 @@
 }
 
 .address__phone {
-  font-size: rem(22px);
+  font-size: 22px;
   cursor: pointer;
 }
 
-.address__phone:hover {
-  color: $red;
+@media (hover: hover) and (pointer: fine) {
+  .address__phone:hover {
+    color: $red;
+  }
 }

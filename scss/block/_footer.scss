@@ -4,18 +4,8 @@
 
 .footer-container {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
-  padding-top: rem(40px);
-  padding-bottom: rem(45px);
-  
-  &::before {
-    content: "";
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #666;
-  }
+  padding: 40px 0;
+  border-top: 1px solid #666; 
 }

@@ -38,7 +38,7 @@
 
   &--video {
     opacity: 0;
-    animation: rotate 1.5s;
+    animation: rotate 1.5s ease;
     animation-fill-mode: forwards;
   }
 }

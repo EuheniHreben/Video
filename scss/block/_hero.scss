@@ -1,5 +1,5 @@
 .hero {
-  margin-bottom: rem(140px);
+  margin-bottom: 140px;
 }
 
 .hero-container {
@@ -12,16 +12,16 @@
 .hero__title {
   margin: 0;
   text-align: center;
-  margin-bottom: rem(18px);
+  margin-bottom: 18px;
 
   @include phones {
-    font-size: rem(52px);
+    font-size: 52px;
   }
 }
 
 .hero__text {
   text-align: center;
-  margin-bottom: rem(44px);
+  margin-bottom: 44px;
 }
 
 .hero__btn {

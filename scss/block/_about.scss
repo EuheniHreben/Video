@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: rem(50px);
+  margin-bottom: 50px;
 
   @include phones {
     display: none;
@@ -22,10 +22,8 @@
 .about__item:nth-child(2) {
   background: #fff;
   color: #000;
-  border-radius: 5px;
   margin-left: -10%;
   margin-top: 14%;
-  max-width: rem(700px);
   overflow: hidden;
 }
 
@@ -36,14 +34,14 @@ body.dark .about__item:nth-child(2) {
 }
 
 .about__img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .about__desc {
   left: 0;
   top: 0;
-  padding: rem(50px);
+  padding: 50px;
 
   @include phones {
     padding: 20px;
@@ -55,11 +53,11 @@ body.dark .about__item:nth-child(2) {
 }
 
 .about__title {
-  font-size: rem(36px);
+  font-size: 36px;
   font-weight: bold;
-  margin-bottom: rem(36px);
+  margin-bottom: 36px;
 }
 
 .about__text {
-  margin-bottom: rem(44px);
+  margin-bottom: 44px;
 }

@@ -19,8 +19,8 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 500px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
   animation-name: animatetop;
   animation-duration: 0.4s;
 
@@ -58,6 +58,7 @@
 .modal-body {
   padding: 20px 16px;
   text-align: center;
+  font-size: 18px;
   color: #000;
 }
 

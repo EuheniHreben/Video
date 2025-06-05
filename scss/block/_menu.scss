@@ -14,7 +14,7 @@
 }
 
 .menu__item {
-  transition: color 0.2s linear;
+  transition: color 0.2s ease-in;
   &--active .menu__link {
     color: $red;
   }

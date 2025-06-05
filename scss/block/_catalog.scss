@@ -1,12 +1,13 @@
 .catalog {
   padding: 80px 0px;
   color: #000;
-  & .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+}
+
+.catalog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 body.dark .catalog {
@@ -17,12 +18,17 @@ body.dark .catalog {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .catalog__item {
   display: flex;
   min-width: 300px;
+  padding-bottom: 40px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #888;
+  }
 
   @include phones {
     display: flex;
@@ -30,9 +36,4 @@ body.dark .catalog {
     align-items: center;
     padding: 30px 20px;
   }
-}
-
-.catalog hr {
-  background-color: rgb(145, 140, 140);
-  border: 1px solid rgb(145, 140, 140);
 }

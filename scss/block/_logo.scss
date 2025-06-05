@@ -3,9 +3,9 @@
 }
 
 .logo__img {
-  width: 150px;
+  max-width : 150px;
 
   @include phones {
-    width: rem(70px);
+    max-width: 70px;
   }
 }
