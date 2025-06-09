@@ -10,7 +10,7 @@
       opacity: 1;
       max-height: 142px;
       padding: 10px;
-      animation: zoom .4s ease-in;
+      animation: show 0.2s ease-out;
     }
   }
 }
@@ -24,7 +24,7 @@
 
 .dropdown__menu {
   position: absolute;
-  background-color: #EDEDED;
+  background-color: #ededed;
   color: #000;
   white-space: nowrap;
   border: 1px solid transparent;
@@ -48,7 +48,6 @@
   }
 }
 
-
 body.dark .dropdown__menu {
   background: #888;
   color: #fff;
@@ -63,9 +62,8 @@ body.dark .dropdown__menu {
   border: 20px solid transparent;
   width: 0;
   height: 0;
-  border-color: transparent transparent #EDEDED transparent;
+  border-color: transparent transparent #ededed transparent;
 }
-
 
 body.dark .dropdown__triangle {
   border-color: transparent transparent #888 transparent;
@@ -80,13 +78,11 @@ body.dark .dropdown__triangle {
   font-weight: bold;
 }
 
-@keyframes zoom {
+@keyframes show {
   0% {
     opacity: 0;
-    max-height: 0px;
   }
   100% {
     opacity: 1;
-    max-height: 142px;
   }
 }

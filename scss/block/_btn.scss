@@ -23,8 +23,10 @@
 
 .btn_type_first {
   background: $red;
+  box-shadow: 0px 5px #a33701;
   &:active {
-    background-color: #e04d00;
+    box-shadow: 0px 1px #a33701;
+    top: 3px;
   }
 }
 
@@ -36,21 +38,21 @@
 
 .btn_type_third {
   background: $gray;
+    box-shadow: 0px 5px #5d5d5d;
+  &:active {
+    box-shadow: 0px 1px #5d5d5d;
+    top: 3px;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .btn_type_first:hover {
-    box-shadow: 0 0 15px 0 #ee3e37;
-  }
+
   .btn_type_second:hover {
     background: $red;
     color: #fff;
   }
   body.dark .btn_type_second:hover {
     background: $red;
-  }
-  .btn_type_third:hover {
-    box-shadow: 0 0 15px 0 #5a5959;
   }
   .btn-toggle:hover {
     color: #fff;

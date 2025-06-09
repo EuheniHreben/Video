@@ -499,8 +499,8 @@ hr {
       opacity: 1;
       max-height: 142px;
       padding: 10px;
-      -webkit-animation: zoom .4s ease-in;
-              animation: zoom .4s ease-in; }
+      -webkit-animation: show 0.2s ease-out;
+              animation: show 0.2s ease-out; }
 
 .dropdown__link {
   font-size: 13px;
@@ -511,7 +511,7 @@ hr {
 
 .dropdown__menu {
   position: absolute;
-  background-color: #EDEDED;
+  background-color: #ededed;
   color: #000;
   white-space: nowrap;
   border: 1px solid transparent;
@@ -545,7 +545,7 @@ body.dark .dropdown__menu {
   border: 20px solid transparent;
   width: 0;
   height: 0;
-  border-color: transparent transparent #EDEDED transparent; }
+  border-color: transparent transparent #ededed transparent; }
 
 body.dark .dropdown__triangle {
   border-color: transparent transparent #888 transparent;
@@ -557,21 +557,17 @@ body.dark .dropdown__triangle {
 .dropdown__item--title {
   font-weight: bold; }
 
-@-webkit-keyframes zoom {
+@-webkit-keyframes show {
   0% {
-    opacity: 0;
-    max-height: 0px; }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    max-height: 142px; } }
+    opacity: 1; } }
 
-@keyframes zoom {
+@keyframes show {
   0% {
-    opacity: 0;
-    max-height: 0px; }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    max-height: 142px; } }
+    opacity: 1; } }
 .index {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1370,15 +1366,9 @@ body.dark .partners {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-width: 100%; }
-
-.banner__img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  min-width: 100%;
+  height: 280px;
+  background: url(../img/banner.jpg) center center/cover no-repeat; }
 
 .news {
   margin-bottom: 120px; }
@@ -1408,15 +1398,18 @@ body.dark .partners {
   min-width: 350px;
   max-width: 450px;
   text-shadow: 1px 1px black;
-  opacity: 1;
-  -webkit-transition: opacity 0.1s linear;
-  transition: opacity 0.1s linear;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 calc(50% - 20px);
-          flex: 0 1 calc(50% - 20px); }
-  .news__item:hover {
-    opacity: 0.8; }
+          flex: 0 1 calc(50% - 20px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
 
+@media (hover: hover) and (pointer: fine) {
+  .news__item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); } }
 .news-block__img {
   max-width: 100%;
   height: 100%;
@@ -1442,7 +1435,7 @@ body.dark .partners {
   font-size: 14px; }
 
 .news-block__subtitle {
-  font-size: calc(16px + 8 * (100vw / 1280));
+  font-size: 24px;
   font-weight: bold; }
 
 .btn {
@@ -1473,9 +1466,13 @@ body.dark .partners {
     top: 3px; }
 
 .btn_type_first {
-  background: #FF5500; }
+  background: #FF5500;
+  -webkit-box-shadow: 0px 5px #a33701;
+          box-shadow: 0px 5px #a33701; }
   .btn_type_first:active {
-    background-color: #e04d00; }
+    -webkit-box-shadow: 0px 1px #a33701;
+            box-shadow: 0px 1px #a33701;
+    top: 3px; }
 
 .btn_type_second {
   background: transparent;
@@ -1483,23 +1480,21 @@ body.dark .partners {
   border: 2px solid #FF5500; }
 
 .btn_type_third {
-  background: #8E8E8E; }
+  background: #8E8E8E;
+  -webkit-box-shadow: 0px 5px #5d5d5d;
+          box-shadow: 0px 5px #5d5d5d; }
+  .btn_type_third:active {
+    -webkit-box-shadow: 0px 1px #5d5d5d;
+            box-shadow: 0px 1px #5d5d5d;
+    top: 3px; }
 
 @media (hover: hover) and (pointer: fine) {
-  .btn_type_first:hover {
-    -webkit-box-shadow: 0 0 15px 0 #ee3e37;
-            box-shadow: 0 0 15px 0 #ee3e37; }
-
   .btn_type_second:hover {
     background: #FF5500;
     color: #fff; }
 
   body.dark .btn_type_second:hover {
     background: #FF5500; }
-
-  .btn_type_third:hover {
-    -webkit-box-shadow: 0 0 15px 0 #5a5959;
-            box-shadow: 0 0 15px 0 #5a5959; }
 
   .btn-toggle:hover {
     color: #fff; }

@@ -22,10 +22,12 @@
   min-width: 350px;
   max-width: 450px;
   text-shadow: 1px 1px black;
-  opacity: 1;
-  transition: opacity 0.1s linear;
   flex: 0 1 calc(50% - 20px);
-  &:hover {
-    opacity: 0.8;
+  transition: transform 0.2s linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .news__item:hover {
+    transform: scale(1.05);
   }
 }
