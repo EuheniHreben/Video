@@ -10,24 +10,17 @@
 }
 
 .news__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 auto;
 }
 
-.news__item {
-  display: flex;
-  position: relative;
-  min-width: 350px;
-  max-width: 450px;
-  text-shadow: 1px 1px black;
-  flex: 0 1 calc(50% - 20px);
-  transition: transform 0.2s linear;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .news__item:hover {
-    transform: scale(1.05);
+@media (max-width: 768px) {
+  .news__list {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    max-width: 550px;
+    width: 100%;
   }
 }

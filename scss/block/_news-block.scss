@@ -1,13 +1,28 @@
+.news-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 300px;
+  text-shadow: 1px 1px black;
+  transition: transform 0.2s linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .news-block:hover {
+    transform: scale(1.05);
+  }
+}
+
 .news-block__img {
+  display: block;
+  min-height: 300px;
   max-width: 100%;
-  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 .news-block__desc {
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
   display: block;
   bottom: 0;
   left: 0;
@@ -15,6 +30,8 @@
   padding: 30px;
   min-height: 150px;
   overflow: hidden;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
   @include phones {
     padding: 20px;
     min-height: 50px;
@@ -28,4 +45,17 @@
 .news-block__subtitle {
   font-size: 24px;
   font-weight: bold;
+}
+
+@include phones {
+  .news-block__img {
+    height: 150px;
+  }
+  .news-block__desc {
+    padding: 10px 15px;
+    min-height: 80px;
+  }
+  .news-block__subtitle {
+    font-size: 18px;
+  }
 }
